@@ -14,7 +14,7 @@
 /*Первый экран*/
 .first_screen {
 position: relative;
-padding: 25px 0 0;
+padding: 25px 0 35px;
 }
 
 .first_screen_logo img {
@@ -31,7 +31,7 @@ text-align: center;
 }
 
 .first_screen_headline {
-margin: .9em 0 .6em 0;
+margin: .3em 0 1em 0;
 font-size: 42px;
 line-height: 1.3;
 font-weight: 400;
@@ -59,8 +59,15 @@ display: inline-block;}
 /*Второй экран*/
 .second_screen {
 position: relative;
-padding: 25px 0 0;
+padding: 25px 0 35px;
 background: #f6f6f6;
+}
+.second_screen_headline {
+margin: .9em 0 .5em 0;
+font-size: 42px;
+line-height: 1.3;
+font-weight: 400;
+text-align: center;
 }
 
 .help_with {
@@ -122,10 +129,16 @@ background: #f6f6f6;
 /*Третий экран*/
 .third_screen {
 position: relative;
-padding: 25px 0 0;
+padding: 25px 0 35px;
 
 }
-
+.thrird_screen_headline {
+margin: .9em 0 1em 0;
+font-size: 42px;
+line-height: 1.3;
+font-weight: 400;
+text-align: center;
+}
 
 </style>
 <!-- Бутстрап -->
@@ -133,7 +146,8 @@ padding: 25px 0 0;
   <!-- Лайкли -->
   <script src="ilya-birman-likely/likely.js"></script>
   <link rel="stylesheet" href="ilya-birman-likely/likely.css">
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   </head>
 <body>
 
@@ -194,7 +208,7 @@ padding: 25px 0 0;
   			<div class="container">
   		<div class="row">
   			<div class="col-xs-12 col-sm-12 col-md-12">
-  				<h1 class="first_screen_headline">Помогает</h1>
+  				<h1 class="second_screen_headline">Помогает</h1>
   			</div>
   			<div class="col-xs-12 col-sm-12 col-md-12">
 <img class="help_with" src="images/helpwith.gif">
@@ -206,31 +220,53 @@ padding: 25px 0 0;
   			<div class="container">
   		<div class="row">
   			<div class="col-xs-12 col-sm-12 col-md-12">
-  				<h1 class="first_screen_headline">Как это работает</h1>
+  				<h1 class="thrird_screen_headline">Как это работает</h1>
   			</div>
-  			<div class="col-xs-12 col-sm-12 col-md-12">
-<img class="help_with" src="images/macbook.png">
-	
-  		</div>
-  		<ul class="tabs">
-  <li class="active"><a href="#home">Home</a></li>
-  <li><a href="#profile">Profile</a></li>
-  <li><a href="#messages">Messages</a></li>
-  <li><a href="#settings">Settings</a></li>
-</ul>
- 
-<div class="pill-content">
-  <div class="active" id="home">...</div>
-  <div id="profile">...</div>
-  <div id="messages">...</div>
-  <div id="settings">...</div>
-</ul>
- 
-<script>
-  $(function () {
-    $('.tabs').tabs()
-  })
-</script>
+  			<script type="text/javascript"> $(function () {
+		    $('.nav-tabs a:first').tab('show');
+});</script>
+  		<div class="col-xs-12 col-sm-4 col-md-3">
+  			 <ul class="nav nav-tabs">
+                <li><a href="#project" data-toggle="tab"><span class="glyphicon glyphicon-pushpin"></span> Выбирайте проект</a></li>
+                <li><a href="#copypast" data-toggle="tab"><span class="glyphicon glyphicon-ok"></span> Копируйте текст</a></li>
+                <li><a href="#screenshot" data-toggle="tab"><span class="glyphicon glyphicon-heart"></span> Делайте скриншоты</a></li>
+                <li><a href="#url" data-toggle="tab"><span class="glyphicon glyphicon-cutlery"></span> Сохраняйте ссылки</a></li>
+                 <li><a href="#notes" data-toggle="tab"><span class="glyphicon glyphicon-cutlery"></span> Пишите заметки</a></li>
+             </ul>
+</div>
+<div class="col-xs-12 col-sm-8 col-md-9">
+<!-- Гифки для каждой функции -->
+             <!-- Новый проект -->
+             <div class="tab-content">
+          	             <div class="tab-pane fade active in" id="project">
+		             <img style="margin-bottom: 20px; border:1px solid #e2e2e2; border-radius: 13px;" src="images/create_folder.gif" width="100%">
+		             <p>Создайте новую папку или выберите из ранее созданных. Затем откройте файндер — вы тут же окажетесь в выбранной папке </p>		            
+	             </div>
+	             <!-- Копипаст -->
+	             <div class="tab-pane fade" id="copypast">
+		              <img style="margin-bottom: 20px; border:1px solid #e2e2e2; border-radius: 13px;" src="images/clipboard.gif" width="100%">
+		              <p>Копируйте любой текст: из браузера, документа, письма. Текст в формате .md переместится в рабочую папку и откроется любым блокнотом</p>
+		             
+	             </div>	    
+	             <!-- Скриншоты -->
+	             <div class="tab-pane fade" id="screenshot">
+		             <p>Скриншоты сохраняются в рабочей папке </p>
+		             
+		             </div>
+	             <!-- Ссылки -->
+	             <div class="tab-pane fade" id="url">
+		          <img style="margin-bottom: 20px; border:1px solid #e2e2e2; border-radius: 13px;" src="images/url.gif" width="100%">
+		             <p>Любая скопированная ссылка превратится в закладку и сохранится в рабочей папке. </p>
+	             </div>
+	             <!-- Заметки -->
+	             <div class="tab-pane fade" id="notes">
+	             	<img style="margin-bottom: 20px; border:1px solid #e2e2e2; border-radius: 13px;" src="images/note.gif" width="100%">
+		             <p>Внезапные идеи и мысли не потеряются — занесите их в заметки, и они сохранятся в нужной папке. Откроются любым блокнотом  </p>
+		             
+	             </div>
+             </div>
+         </div>
+
 </div>
 </div>
 </div>
