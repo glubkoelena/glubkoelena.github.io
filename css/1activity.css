@@ -1,0 +1,206 @@
+/*Дополнительные стили для промостраницы OneActivity*/
+
+/*Первый экран*/
+.first_screen {
+position: relative;
+padding: 25px 0 35px;
+background: #f6f6f6;
+}
+
+.first_screen_logo img { /*Логотип*/
+max-width: 120px;
+width: 100%;
+margin-top:-1px;
+}
+
+.promo_header { /*Заголовок*/
+font-size: 26px;
+line-height: 1.3;
+font-weight: 300;
+}
+
+.first_screen_headline { /*Подзаголовок*/
+margin: .3em 0 .6em 0;
+font-size: 40px;
+line-height: 1.3;
+font-weight: 500;
+text-align: center;
+}
+
+.logo {
+position: absolute; 
+top: 20px}
+
+.language { 
+text-align: right;
+top: 1em;}
+
+.lang-switch {
+font-size: 14px;
+line-height: 14px;
+margin: 0 0;
+display: inline-block;}
+
+.lang-switch a {
+	color: #ccc;
+}
+
+/*Второй экран*/
+.second_screen {
+position: relative;
+padding: 25px 0 70px;
+}
+
+.second_screen_headline { /*Заголовок*/
+margin: .9em 0 .5em 0;
+font-size: 40px;
+line-height: 1.3;
+font-weight: 500;
+}
+
+.help_with { /*Гифка к блоку «Помогает»*/
+max-width: 1079px;
+width: 100%;
+margin-bottom: 20px;
+margin-top: 20px;  
+border: 2px solid #f6f6f6;
+}
+
+.line { 
+border-left: 2px solid #ccc;
+margin-left: 20px;
+padding-left: 10px; 
+}
+
+/*Кнопка*/
+.first_screen_button {
+margin-top:20px;
+}
+
+.first-screen_download, button {
+font-size: 22px;
+background: #428ac8;
+border: none;
+outline-style: none;
+margin: 0;
+font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+padding: 15px 30px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+color: #ffffff;
+-webkit-transition: background-color .3s ease, -webkit-transform .3s ease, box-shadow .3s ease;
+-moz-transition: background-color .3s ease, -moz-transform .3s ease, box-shadow .3s ease;
+-o-transition: background-color .3s ease, -o-transform .3s ease, box-shadow .3s ease;
+-ms-transition: background-color .3s ease, -ms-transform .3s ease, box-shadow .3s ease;
+transition: background-color .3s ease, transform .3s ease, box-shadow .3s ease;
+-webkit-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.first-screen_download:hover, button:hover {
+background-color: #4d59a1;
+}
+
+.first-screen_download:active, button:active {
+-webkit-transform: scale(1.06);
+-moz-transform: scale(1.06);
+-o-transform: scale(1.06);
+-ms-transform: scale(1.06);
+transform: scale(1.06);
+-webkit-box-shadow: 0 3px 5px 2px rgba(0, 0, 0, .3);
+box-shadow: 0 3px 5px 2px rgba(0, 0, 0, .3);
+}
+
+/*Третий экран*/
+.third_screen {
+position: relative;
+}
+
+.thrird_screen_headline { /*Заголовок*/
+margin: .9em 0 1em 0;
+font-size: 40px;
+line-height: 1.3;
+font-weight: 500;
+}
+
+.gifs {
+margin-bottom: 20px; 
+border:1px solid #e2e2e2; 
+border-radius: 13px;
+}
+
+.hotkeys-img{ /*Картинка «Горячие клавиши»*/
+max-width: 400px;
+width: 100%;
+}
+
+.hotkeys{ 
+font-size: 25px;
+font-weight: 500;	
+}
+
+.h3_xs{
+margin-bottom: 20px;
+margin-top: 60px;
+}
+
+/*Четвертый экран*/
+.fourth_screen {
+position: relative;
+padding: 20px 0 100px;
+}
+
+.chrome { /*Картинка Хрома*/
+max-width: 704px;
+width: 100%;}
+
+.link { /*Подчеркнутая ссылка*/
+color: #0060a0;
+border-color: rgba(0,96,160,.2);
+border-bottom-width: 1px;
+border-bottom-style: solid;
+}
+
+.link:hover {
+  color: #ff6666;
+  border-color: #ff6666;
+}
+
+/*Отзывы*/ 
+.otz_screen {
+position: relative;
+padding: 20px 0 35px;
+background-color: black;
+}
+
+.otz_screen_headline {
+margin: .9em 0 1.3em 0;
+font-size: 40px;
+color: white;
+line-height: 1.3;
+font-weight: 500;
+}
+
+.otz{
+color: white;
+}
+
+/*Подписка*/ 
+.soon_screen {
+position: relative;
+padding: 20px 0 35px;
+background-color: black;
+}
+
+.hr_dotted {
+border: 0;
+border-bottom: 1px dashed #fff;
+background: #000;
+}
+
+.ul {
+list-style:none;
+padding:0px;
+margin:0px;
+margin-bottom:30px;
+}

@@ -8,535 +8,313 @@
 <meta name="description" content="1Актвити — полезная программа для Мак ОС. Сортирует файлы по проектам, не захламляет папку загрузок. ">
 <meta name="keywords" content="OneActivity, 1Activity, утилита для мак ос, сортирует файлы по папкам, ProductiveMode">
 <title>1Активити: программа для работы с файлами</title>
-<style>
-
-
-/*Первый экран*/
-.first_screen {
-position: relative;
-padding: 25px 0 35px;
-background: #f6f6f6;
-}
-
-.first_screen_logo img {
-    max-width: 120px;
-    width: 100%;
-    margin-top:-1px;
-}
-
-.promo_header {
-
-font-size: 26px;
-line-height: 1.3;
-font-weight: 300;
-
-}
-
-.first_screen_headline {
-margin: .3em 0 .6em 0;
-font-size: 40px;
-line-height: 1.3;
-font-weight: 500;
-text-align: center;
-}
-
-.logo{position: absolute;
-top: 20px}
-
-.language {
-	text-align: right;
-top: 1em;}
-
-.lang-switch {
-font-size: 14px;
-line-height: 14px;
-margin: 0 0;
-display: inline-block;}
-
-.lang-switch a {
-	color: #ccc;
-}
-
-
-/*Второй экран*/
-.second_screen {
-position: relative;
-padding: 25px 0 70px;
-
-/*background: #f6f6f6;*/
-}
-.second_screen_headline {
-margin: .9em 0 .5em 0;
-font-size: 40px;
-line-height: 1.3;
-font-weight: 500;
-/*text-align: center;*/
-}
-
-.help_with {
-    max-width: 1079px;
-    width: 100%;
-  	margin-bottom: 20px;
-    margin-top: 20px;  
-    border: 2px solid #f6f6f6;
-    /*text-align: center;*/
-}
-
-.line { 
-    border-left: 2px solid #ccc; /* Параметры линии */ 
-    margin-left: 20px; /* Отступ слева */
-    padding-left: 10px; /* Расстояние от линии до текста */ 
-   }
-
-
-/*Кнопка*/
-.first_screen_button {
-	margin-top:20px;
-}
-
-.first-screen_download, button {
-    font-size: 22px;
-    background: #428ac8;
-    border: none;
-    outline-style: none;
-    margin: 0;
-    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-    padding: 15px 30px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    color: #ffffff;
-    -webkit-transition: background-color .3s ease, -webkit-transform .3s ease, box-shadow .3s ease;
-    -moz-transition: background-color .3s ease, -moz-transform .3s ease, box-shadow .3s ease;
-    -o-transition: background-color .3s ease, -o-transform .3s ease, box-shadow .3s ease;
-    -ms-transition: background-color .3s ease, -ms-transform .3s ease, box-shadow .3s ease;
-    transition: background-color .3s ease, transform .3s ease, box-shadow .3s ease;
-    -webkit-box-shadow: 0 0 0 0 transparent;
-    box-shadow: 0 0 0 0 transparent
-}
-
-.first-screen_download:hover, button:hover {
-    background-color: #4d59a1
-
-}
-
-.first-screen_download:active, button:active {
-    -webkit-transform: scale(1.06);
-    -moz-transform: scale(1.06);
-    -o-transform: scale(1.06);
-    -ms-transform: scale(1.06);
-    transform: scale(1.06);
-    -webkit-box-shadow: 0 3px 5px 2px rgba(0, 0, 0, .3);
-    box-shadow: 0 3px 5px 2px rgba(0, 0, 0, .3)
-
-}
-
-/*Третий экран*/
-.third_screen {
-position: relative;
-
-
-}
-.thrird_screen_headline {
-margin: .9em 0 1em 0;
-font-size: 40px;
-line-height: 1.3;
-font-weight: 500;
-}
-
-.hotkeys-img{
-	max-width: 400px;
-    width: 100%;
-}
-.hotkeys{
-	font-size: 25px;
-	font-weight: 500;
-	
-}
-.h3_xs{
-margin-bottom: 20px;
-margin-top: 60px;
-
-}
-/*Четвертый экран*/
-.fourth_screen {
-position: relative;
-padding: 20px 0 100px;
-}
-.chrome {
-	max-width: 704px;
-    width: 100%;}
-
-    .link{
-    	color: #0060a0;
-    	    border-color: rgba(0,96,160,.2);
-        border-bottom-width: 1px;
-    border-bottom-style: solid;
-    }
-
-    .link:hover {
-  color: #ff6666;
-  border-color: #ff6666;
-}
-
-/*Отзывы*/ 
-.otz_screen {
-position: relative;
-padding: 20px 0 35px;
-background-color: black;
-}
-
-.otz_screen_headline {
-margin: .9em 0 1.3em 0;
-font-size: 40px;
-color: white;
-line-height: 1.3;
-font-weight: 500;
-}
-
-.otz{
-color: white;
-}
-
-/*Подписка*/ 
-.soon_screen {
-position: relative;
-padding: 20px 0 35px;
-background-color: black;
-}
-
-.hr_dotted {
-	
-	
-
-border: 0;
-    border-bottom: 1px dashed #fff;
-    background: #000;
-}
-
-.ul {
-list-style:none;
-padding:0px;
-margin:0px;
-margin-bottom:30px;
-}
-</style>
+<!-- Свои стили -->
+ <link href="css/1activity.css" rel="stylesheet">
 <!-- Бутстрап -->
  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Лайкли -->
-  <script src="ilya-birman-likely/likely.js"></script>
-  <link rel="stylesheet" href="ilya-birman-likely/likely.css">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+<!-- Лайкли -->
+ <script src="ilya-birman-likely/likely.js"></script>
+ <link rel="stylesheet" href="ilya-birman-likely/likely.css">
+ <!-- Джава Скрипт -->
+ <script src="js/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
   </head>
 <body>
-
-
+<!-- Первый экран -->
 <section class="first_screen">
 <div class="container">
   <div class="row">
   	<div class="col-xs-9 col-sm-10 col-md-11 col-lg-10">
   	</div>
+  	<!-- Языки -->
   	<div class="col-xs-3 col-sm-2 col-md-1 col-lg-2">
-  	<div class="language">
-        <p class="lang-switch">RU</p>
-        <p class="lang-switch"><a href="http://productivitymode.com/oneactivity/">EN</a></p>
-    </div>
-</div>
-  		<div style="text-align: center;">
-  			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 first_screen_logo">
-  		  	<img src="images/prodactivity.png"><p style="margin-top:8px; font-size: 14px;">1Активити&nbsp;для&nbsp;Мак&nbsp;ОС</p>
-  		 	</div>
-  			<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+  		<div class="language">
+        	<p class="lang-switch">RU</p>
+        	<p class="lang-switch"><a href="http://productivitymode.com/oneactivity/">EN</a></p>
+    	</div>
+	</div>
+	<!-- Логотип -->
+  	<div style="text-align: center;">
+  		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 first_screen_logo">
+  			<img src="images/prodactivity.png" alt="Логотип 1Активити"><p style="margin-top:8px; font-size: 14px;">1Активити&nbsp;для&nbsp;Мак&nbsp;ОС</p>
+  		</div>
+  		<!-- Главный заголовок и подзаголовок -->
+  		<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
   			<h1 class="first_screen_headline">Упрощает работу над&nbsp;проектами</h1>
   			<h2 class="promo_header">Сортирует файлы по&nbsp;проектам. Не&nbsp;захламляет папку&nbsp;загрузок</h2>
-  			</div>
-
   		</div>
- 		
   	</div>
-  </div>
-  <div class="container">
-  <div class="row">
-  	<div class="first_screen_button">
-  		
-<div class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9" style="text-align: center;">
+ </div>
+</div>
+<div class="container">
+	<div class="row">
+		<!-- Кнопка «Купить» -->
+  		<div class="first_screen_button">
+  			<div class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9" style="text-align: center;">
   			<form method="POST" action="http://sites.fastspring.com/prodactivity/product/1activity?action=order" target="_top"><input type="submit" value="Купить за $3.99" class="first-screen_download  button"></form>
-  			
   			</div>
   		</div>
   	</div>
-  		<div class="container">
-  		<div class="row">
-  			<div class="col-xs-12 col-sm-6 col-md-6" style="margin-top: 80px;">	
-  				<p style="font-size: 20px; text-align: center;">Как обычно</p>
-<img style="margin-top: 20px;" src="images/before-grey.png" width="100%">
-<p style="font-size: 12px; margin-top: 10px;">Свалка разрозненных файлов</p>
-  			</div>
-  			<div class="col-xs-12 col-sm-6 col-md-6" style="margin-top: 80px;">	
-  				<p style="font-size: 20px; text-align: center;">С 1Активити</p>
-<img style="margin-top: 20px;" src="images/after-grey.png" width="100%"><p style="font-size: 12px; margin-top: 10px; margin-bottom: 60px;">Файлы разложены по проектам. Чистота и порядок</p>
-  			</div>
-  			</div>
-  			</div>
-  			</div>
+</div>
+<div class="container">
+  	<div class="row">
+  		<!-- Сравнение: до и после -->
+  		<div class="col-xs-12 col-sm-6 col-md-6" style="margin-top: 80px;">	
+  			<p style="font-size: 20px; text-align: center;">Как обычно</p>
+			<img style="margin-top: 20px;" src="images/before-grey.png" width="100%" alt="Беспорядок в папке загрузок">
+			<p style="font-size: 12px; margin-top: 10px;">Свалка разрозненных файлов</p>
+  		</div>
+  		<div class="col-xs-12 col-sm-6 col-md-6" style="margin-top: 80px;">	
+  			<p style="font-size: 20px; text-align: center;">С&nbsp;1Активити</p>
+			<img style="margin-top: 20px;" src="images/after-grey.png" width="100%" alt="1Активити разложила файлы по папкам проектов"><p style="font-size: 12px; margin-top: 10px; margin-bottom: 60px;">Файлы разложены по&nbsp;проектам. Чистота и&nbsp;порядок</p>
+  		</div>
+  	</div>
+</div>			
 </section>
 <section class="second_screen">
-
-  			<div class="container">
-  		<div class="row">
-  			<div class="col-xs-12 col-sm-12 col-md-12">
+<div class="container">
+  	<div class="row">
+  		<!-- Блок «Помогает» -->
+  		<div class="col-xs-12 col-sm-12 col-md-12">
   				<h1 class="second_screen_headline">Помогает</h1>
-  			</div>
-  			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-7">
-<img class="help_with" src="images/helpwith.gif">
   		</div>
-  	
+  		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-7">
+			<img class="help_with" src="images/helpwith.gif" alt="1Активити помогает работать над проектами, писать курсовую, готовиться к конференции, собирать материалы для блога, планировать путешествия">
+  		</div>
   		<div class="hidden-xs hidden-sm hidden-md col-lg-offset-1 col-lg-4" style="margin-top: 40px;">
-  			<p>Можете забыть о&nbsp;<em>«Сохранить как...»</em> и&nbsp;больше не&nbsp;отвлекаться от&nbsp;работы. Все&nbsp;загружаемые файлы автоматически попадают в&nbsp;рабочий проект. 
-</p>
+  			<p>Можете забыть о&nbsp;<em>«Сохранить как...»</em> и&nbsp;больше не&nbsp;отвлекаться от&nbsp;работы. Все&nbsp;загружаемые файлы автоматически попадают в&nbsp;рабочий проект.</p>
   		</div>
-  		 
-  			<div class="hidden-xs hidden-sm hidden-lg col-md-4" style="margin-top: 25px;">
-  			<p>Можете забыть о&nbsp;<em>«Сохранить как...»</em> и&nbsp;больше не&nbsp;отвлекаться от&nbsp;работы. Все&nbsp;загружаемые файлы автоматически попададут в&nbsp;рабочий проект.
-</p>
+  		<div class="hidden-xs hidden-sm hidden-lg col-md-4" style="margin-top: 25px;">
+  			<p>Можете забыть о&nbsp;<em>«Сохранить как...»</em> и&nbsp;больше не&nbsp;отвлекаться от&nbsp;работы. Все&nbsp;загружаемые файлы автоматически попададут в&nbsp;рабочий проект.</p>
   		</div>
   		<div class="hidden-md hidden-lg col-sm-12 col-sx-12" style="margin-top: 15px;">
-  			<p>Можете забыть о&nbsp;<em>«Сохранить как...»</em> и&nbsp;больше не&nbsp;отвлекаться от&nbsp;работы. Все&nbsp;загружаемые файлы автоматически попададут в&nbsp;рабочий проект.
-</p>
+  			<p>Можете забыть о&nbsp;<em>«Сохранить как...»</em> и&nbsp;больше не&nbsp;отвлекаться от&nbsp;работы. Все&nbsp;загружаемые файлы автоматически попададут в&nbsp;рабочий проект.</p>
   		</div>
   	</div>
-  </div>
+</div>
 </section>
 <hr>
 <section class="third_screen">
-
-  			<div class="container">
-  		
-<div class="row">
-  			<div class="col-xs-12 col-sm-12 col-md-12">
-  				<h1 class="thrird_screen_headline">Как работает</h1>
-  			</div>
-
-  	
-  			<script type="text/javascript"> $(function () {
-		    $('.nav-tabs a:first').tab('show');
-});</script>
+<div class="container">
+  	<div class="row">
+  		<!-- Блок «Как работает» -->
+  		<div class="col-xs-12 col-sm-12 col-md-12">
+  			<h1 class="thrird_screen_headline">Как работает</h1>
+  		</div>
+  			<!-- Скрипт тегов -->
+			<script type="text/javascript"> $(function () {
+		    $('.nav-tabs a:first').tab('show');});</script>
+		<!-- ДЛЯ ПЛАШЕТОВ И ПК -->
   		<div class="hidden-xs col-sm-4 col-md-3">
-  			 <ul class="nav nav-tabs">
+  			<!-- Меню функций -->
+  			<ul class="nav nav-tabs">
                 <li class="active"><a href="#project" data-toggle="tab" aria-expanded="true"> Выбирайте проект</a></li>
                 <li><a href="#copypast" data-toggle="tab"> Копируйте текст</a></li>
                 <li><a href="#screenshot" data-toggle="tab"> Делайте скриншоты</a></li>
                 <li><a href="#url" data-toggle="tab"> Сохраняйте ссылки</a></li>
-                 <li><a href="#notes" data-toggle="tab"> Пишите заметки</a></li>
+                <li><a href="#notes" data-toggle="tab"> Пишите заметки</a></li>
              </ul>
-</div>
-<div class="hidden-xs col-sm-8 col-md-9">
-<!-- Гифки для каждой функции -->
-             <!-- Новый проект -->
-             <div class="tab-content">
-          	             <div class="tab-pane fade active in" id="project">
-		             <img style="margin-bottom: 20px; border:1px solid #e2e2e2; border-radius: 13px;" src="images/create_folder.gif" width="100%">
-		             <p>Допустим, вы пишете статью о верстке. Создайте папку, в которую будете складывать весь материал. Если откроете файндер, сразу окажетесь в созданной папке.</p>		            
-	             </div>
-	             <!-- Копипаст -->
-	             <div class="tab-pane fade" id="copypast">
-		              <img style="margin-bottom: 20px; border:1px solid #e2e2e2; border-radius: 13px;" src="images/clipboard.gif" width="100%">
-		              <p>Копируйте любой текст: из браузера, документа, письма. Текст в формате .md переместится в рабочую папку и откроется любым блокнотом.</p>
-		             
-	             </div>	    
-	             <!-- Скриншоты -->
-	             <div class="tab-pane fade" id="screenshot">
-		             <p>Скриншоты автоматически попадут в рабочую папку. </p>
-		             
-		             </div>
-	             <!-- Ссылки -->
-	             <div class="tab-pane fade" id="url">
-		          <img style="margin-bottom: 20px; border:1px solid #e2e2e2; border-radius: 13px;" src="images/url.gif" width="100%">
-		             <p>Сохраняйте нужные ссылки в папке проекта. Откроются в любом браузере.</p>
-	             </div>
-	             <!-- Заметки -->
-	             <div class="tab-pane fade" id="notes">
-	             	<img style="margin-bottom: 20px; border:1px solid #e2e2e2; border-radius: 13px;" src="images/note.gif" width="100%">
-		             <p>Внезапные идеи и мысли не потеряются — занесите их в заметки, и они сохранятся в рабочей папке. Откроются любым блокнотом.  </p>
-		             
-	             </div>
-             </div>
-         </div>
-<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-	<h3 style="margin-bottom: 20px;">Выбирайте проект</h3>
-	<img style="margin-bottom: 20px; border:1px solid #e2e2e2; border-radius: 13px;" src="images/create_folder.gif" width="100%">
-		             <p>Допустим, вы пишете статью о верстке. Создайте папку, в которую будете складывать весь материал. Если откроете файндер, сразу окажетесь в созданной папке.</p>
-	<h3 class="h3_xs">Копируйте текст</h3>
-		<img style="margin-bottom: 20px; border:1px solid #e2e2e2; border-radius: 13px;" src="images/clipboard.gif" width="100%">
-		              <p>Копируйте любой текст: из браузера, документа, письма. Текст в формате .md переместится в рабочую папку и откроется любым блокнотом.</p>  
-	<h3 class="h3_xs">Делайте скриншоты</h3> 
-<img style="margin-bottom: 20px; border:1px solid #e2e2e2; border-radius: 13px;" src="images/clipboard.gif" width="100%">
-<p>Скриншоты автоматически попадут в рабочую папку. </p>
-<h3 class="h3_xs">Сохраняйте ссылки</h3>
-<img style="margin-bottom: 20px; border:1px solid #e2e2e2; border-radius: 13px;" src="images/url.gif" width="100%">
-		             <p>Сохраняйте нужные ссылки в папке проекта. Откроются в любом браузере.</p>
-		             <h3 class="h3_xs">Делайте заметки</h3>
-		             <img style="margin-bottom: 20px; border:1px solid #e2e2e2; border-radius: 13px;" src="images/note.gif" width="100%">
-		             <p>Внезапные идеи и мысли не потеряются — занесите их в заметки, и они сохранятся в рабочей папке. Откроются любым блокнотом.  </p>
-		             <h3 class="h3_xs">Используйте горячие клавиши</h3>
-<img class="hotkeys-img" src="images/hotkeys-rus.png">
-  				<p>Можете задавать свои комбинации, но следите, чтобы они не&nbsp;использовались другими программами.</p>
-</div>
-</div>
-<div class="row hidden-xs" style="margin-top:60px">
-         <div class="col-sm-5 col-md-6 col-lg-6">
-  				<img class="hotkeys-img" src="images/hotkeys-rus.png">
+		</div>
+		<div class="hidden-xs col-sm-8 col-md-9">
+			<!-- Гифки для каждой функции -->
+            <div class="tab-content">
+            	<!-- Новый проект -->
+          	    <div class="tab-pane fade active in" id="project">
+		             <img class="gifs" src="images/create_folder.gif" width="100%" alt="Создаем новую папку">
+		             <p>Допустим, вы пишете статью о&nbsp;верстке. Создайте папку, в&nbsp;которую будете складывать весь материал. Если откроете файндер, сразу окажетесь в&nbsp;созданной папке.</p>		    
+		        </div>
+	        	<!-- Копипаст -->
+	            <div class="tab-pane fade" id="copypast">
+		              <img class="gifs" src="images/clipboard.gif" width="100%" alt="Вся информация из буфера обмена сохранится в рабочей папке">
+		              <p>Копируйте любой текст: из&nbsp;браузера, документа, письма. Текст в&nbsp;формате .md переместится в&nbsp;рабочую папку и&nbsp;откроется любым блокнотом.</p>
+		        </div>	    
+	            <!-- Скриншоты -->
+	            <div class="tab-pane fade" id="screenshot">
+		             <p>Скриншоты автоматически попадут в&nbsp;рабочую папку.</p>
+		        </div>
+	            <!-- Ссылки -->
+	            <div class="tab-pane fade" id="url">
+		          	<img class="gifs" src="images/url.gif" width="100%" alt="Все сохраненные ссылки окажутся в рабочей папке в виде файлов формата .webloc">
+		             <p>Сохраняйте нужные ссылки в&nbsp;папке проекта. Откроются в&nbsp;любом браузере.</p>
+	            </div>
+	            <!-- Заметки -->
+	            <div class="tab-pane fade" id="notes">
+	             	<img class="gifs" src="images/note.gif" width="100%" alt="Пишите заметки в открывшемся окошке — они сохранятся в рабочей папке">
+		            <p>Внезапные идеи и&nbsp;мысли не&nbsp;потеряются&nbsp;— занесите их в&nbsp;заметки, и&nbsp;они сохранятся в&nbsp;рабочей папке. Откроются любым блокнотом.  </p>
+		        </div>
+            </div>
+        </div>
+        <!-- ДЛЯ ТЕЛЕФОНОВ -->
+		<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+			<h3 style="margin-bottom: 20px;">Выбирайте проект</h3>
+			<img class="gifs" src="images/create_folder.gif" width="100%" alt="Создаем новую папку">
+		    <p>Допустим, вы пишете статью о&nbsp;верстке. Создайте папку, в&nbsp;которую будете складывать весь материал. Если откроете файндер, сразу окажетесь в&nbsp;созданной папке.</p>
+			<h3 class="h3_xs">Копируйте текст</h3>
+			<img class="gifs" src="images/clipboard.gif" width="100%" alt="Вся информация из буфера обмена сохранится в рабочей папке">
+		    <p>Копируйте любой текст: из&nbsp;браузера, документа, письма. Текст в&nbsp;формате .md переместится в&nbsp;рабочую папку и&nbsp;откроется любым блокнотом.</p>  
+			<h3 class="h3_xs">Делайте скриншоты</h3> 
+			<img class="gifs" src="images/clipboard.gif" width="100%">
+			<p>Скриншоты автоматически попадут в&nbsp;рабочую папку. </p>
+			<h3 class="h3_xs">Сохраняйте ссылки</h3>
+			<img class="gifs" src="images/url.gif" width="100%" alt="Все сохраненные ссылки окажутся в рабочей папке в виде файлов формата .webloc">
+		    <p>Сохраняйте нужные ссылки в&nbsp;папке проекта. Откроются в&nbsp;любом браузере.</p>
+		    <h3 class="h3_xs">Делайте заметки</h3>
+		    <img class="gifs" src="images/note.gif" width="100%" alt="Пишите заметки в открывшемся окошке — они сохранятся в рабочей папке">
+		    <p>Внезапные идеи и&nbsp;мысли не&nbsp;потеряются&nbsp;— занесите их в&nbsp;заметки, и&nbsp;они сохранятся в&nbsp;рабочей папке. Откроются любым блокнотом.  </p>
+		    <h3 class="h3_xs">Используйте горячие клавиши</h3>
+			<img class="hotkeys-img" src="images/hotkeys-rus.png" alt="Горячие клавиши">
+  			<p>Можете задавать свои комбинации, но&nbsp;следите, чтобы они не&nbsp;использовались другими программами.</p>
+		</div>
+	</div>
+	<!-- ДЛЯ ПЛАНШЕТОВ И ПК -->
+	<div class="row hidden-xs" style="margin-top:60px">
+		<!-- Горячие клавиши -->
+        <div class="col-sm-5 col-md-6 col-lg-6">
+  			<img class="hotkeys-img" src="images/hotkeys-rus.png" alt="Горячие клавиши">
+  		</div>
+		<div class="col-sm-7 col-md-6 col-lg-6" style="margin-top: 100px;">
+  			<p>Используйте горячие клавиши.</p> 
+  			<p>Можете задавать свои комбинации, но&nbsp;сначала проверьте, не&nbsp;используются&nbsp;ли они другой программой.</p>
+  		<div>
+  		<!-- СКРЫТЬ МЫШКУ-ТАЧПАД ДЛЯ ПЛАНШЕТА -->
+		<div class="hidden-sm">
+  			<div class="hotkeys"><span><del>мышка</del></span><span style="margin-left: 30px;"><del>тачпад</del></span><span style="margin-left: 30px;">⌘</span>
   			</div>
-<div class="col-sm-7 col-md-6 col-lg-6" style="margin-top: 100px;">
-  				<p>Используйте горячие клавиши.</p> 
-  				<p>Можете задавать свои комбинации, но сначала проверьте, не&nbsp;используются&nbsp;ли они другой программой.</p>
-  				<div>
-
-  				<div class="hidden-sm">
-  				<div class="hotkeys"><span><del>мышка</del></span><span style="margin-left: 30px;"><del>тачпад</del></span><span style="margin-left: 30px;">⌘</span></div><div>
-  			
-  		
+  		<div>
+  	</div>
 </div>
-
-  	
-</div>
-
-
 </section>
 <section class="fourth_screen">
-
-  			<div class="container">
-  		
-<div class="row">
-	<div class="hidden-xs hidden-sm col-md-5 col-lg-5" style="margin-top: 40px;">
-      <p>Гугл Хром все загружаемые файлы помещает в&nbsp;рабочую папку.</p>
-      <p>Допустим, сейчас вы работаете с&nbsp;папкой <em>«Учебные материалы»</em>, и&nbsp;все файлы автоматические скачиваются в&nbsp;эту папку. Если вы переключитесь на&nbsp;другую папку, все новые файлы будут закачиваться уже в&nbsp;нее.</p>
-      <p><a class="link" href="http://productivitymode.com/oneactivity/setup/">Как настроить Хром</a></p>
-  				
-  			</div>	
-  			<div class="hidden-xs hidden-sm col-md-offset-1 col-lg-offset-1 col-md-6 col-lg-6" style="margin-top: 65px;">
-  				<img class="chrome" src="images/chrome.png">
-  			</div>
-</div
-<div class="row">
-	<div class="hidden-xs hidden-md hidden-lg col-sm-4" style="margin-top: 40px;">
-		<p>Все загружаемые файлы Хром помещает в&nbsp;рабочую папку.</p>
-	</div>
-	<div class="hidden-xs hidden-md hidden-lg col-sm-offset-1 col-sm-7"style="margin-top: 30px;">
-  				<img class="chrome" src="images/chrome.png">
-  			</div>
-	<div class="hidden-xs hidden-md hidden-lg col-sm-offset-5 col-sm-7"style="margin-top: 20px;">
-
-      <p>Допустим, сейчас вы работаете с&nbsp;папкой <em>«Учебные материалы»</em>, и&nbsp;все файлы автоматические скачиваются в&nbsp;эту папку. Если вы переключитесь на&nbsp;другую папку, все новые файлы будут закачиваться уже в&nbsp;нее.</p>
-      <p><a class="link" href="http://productivitymode.com/oneactivity/setup/">Как настроить Хром</a></p>
-  </div>
-
-
-<div class="row">
-	<div class="hidden-sm hidden-md hidden-lg col-xs-12">
-		<h3 style="margin-bottom: 20px;">Работайте в Хроме</h3>
-		<p>Гугл Хром все загружаемые файлы помещает в&nbsp;рабочую папку.</p>
-		<img class="chrome" src="images/chrome.png" style="magin-top: 20px; margin-bottom: 20px;">
-	</div>
-		<div class="hidden-sm hidden-md hidden-lg col-xs-12">
-  				
-      <p>Допустим, сейчас вы работаете с&nbsp;папкой <em>«Учебные материалы»</em>, и&nbsp;все файлы автоматические скачиваются в&nbsp;эту папку. Если вы переключитесь на&nbsp;другую папку, все новые файлы будут закачиваться уже в&nbsp;нее.</p>
-      <p><a class="link" href="http://productivitymode.com/oneactivity/setup/">Как настроить Хром</a></p>
-  			</div>
-      
-  				
-  			</div>	
-  			<div class="first_screen_button" style="margin-top: 50px;">
-  		
-<div class="col-xs-12" style="text-align: center;">
-  			<form method="POST" action="http://sites.fastspring.com/prodactivity/product/1activity?action=order" target="_top"><div><input type="submit" value="Купить за $3.99" class="first-screen_download  button"></form>
-  			</div>
+<div class="container">
+	<!-- Про Гугл Хром -->
+  	<div class="row">
+  		<!-- ДЛЯ ПК -->
+		<div class="hidden-xs hidden-sm col-md-5 col-lg-5" style="margin-top: 40px;">
+      		<p>Гугл Хром все загружаемые файлы помещает в&nbsp;рабочую папку.</p>
+      		<p>Допустим, сейчас вы работаете с&nbsp;папкой <em>«Учебные материалы»</em>, и&nbsp;все файлы автоматически скачиваются в&nbsp;эту папку. Если вы переключитесь на&nbsp;другую папку, все новые файлы будут закачиваться уже в&nbsp;нее.</p>
+      		<p><a class="link" href="http://productivitymode.com/oneactivity/setup/">Как настроить Хром</a></p>
   		</div>	
-
+  		<div class="hidden-xs hidden-sm col-md-offset-1 col-lg-offset-1 col-md-6 col-lg-6" style="margin-top: 65px;">
+  			<img class="chrome" src="images/chrome.png" alt="Все файлы, сохраненные в Гугл Хроме, попадут в рабочую папку">
+  		</div>
+	</div
+	<div class="row">
+		<!-- ДЛЯ ПЛАНШЕТОВ -->
+		<div class="hidden-xs hidden-md hidden-lg col-sm-4" style="margin-top: 40px;">
+			<p>Все загружаемые файлы Хром помещает в&nbsp;рабочую папку.</p>
+		</div>
+		<div class="hidden-xs hidden-md hidden-lg col-sm-offset-1 col-sm-7"style="margin-top: 30px;">
+  		<img class="chrome" src="images/chrome.png" alt="Все файлы, сохраненные в Гугл Хроме, попадут в рабочую папку">
+  		</div>
+		<div class="hidden-xs hidden-md hidden-lg col-sm-offset-5 col-sm-7"style="margin-top: 20px;">
+			<p>Допустим, сейчас вы работаете с&nbsp;папкой <em>«Учебные материалы»</em>, и&nbsp;все файлы автоматически скачиваются в&nbsp;эту папку. Если вы переключитесь на&nbsp;другую папку, все новые файлы будут закачиваться уже в&nbsp;нее.</p>
+      		<p><a class="link" href="http://productivitymode.com/oneactivity/setup/">Как настроить Хром</a></p>
+  		</div>
+	<div class="row">
+		<!-- ДЛЯ ТЕЛЕФОНОВ -->
+		<div class="hidden-sm hidden-md hidden-lg col-xs-12">
+			<h3 style="margin-bottom: 20px;">Работайте в&nbsp;Хроме</h3>
+			<p>Гугл Хром все загружаемые файлы помещает в&nbsp;рабочую папку.</p>
+			<img class="chrome" src="images/chrome.png" style="margin-top: 20px; margin-bottom: 20px;" alt="Все файлы, сохраненные в Гугл Хроме, попадут в рабочую папку">
+		</div>
+		<div class="hidden-sm hidden-md hidden-lg col-xs-12">
+  			<p>Допустим, сейчас вы работаете с&nbsp;папкой <em>«Учебные материалы»</em>, и&nbsp;все файлы автоматически скачиваются в&nbsp;эту папку. Если вы переключитесь на&nbsp;другую папку, все новые файлы будут закачиваться уже в&nbsp;нее.</p>
+      		<p><a class="link" href="http://productivitymode.com/oneactivity/setup/">Как настроить Хром</a></p>
+  		</div>
+    </div>	
+    <!-- Кнопка «Купить» -->
+  	<div class="first_screen_button" style="margin-top: 50px;">
+  		<div class="col-xs-12" style="text-align: center;">
+  			<form method="POST" action="http://sites.fastspring.com/prodactivity/product/1activity?action=order" target="_top"><div><input type="submit" value="Купить за $3.99" class="first-screen_download  button"></form>
+  		</div>
+  	</div>	
+</div>
 </section>
 <section class="otz_screen">
-
-  			<div class="container">
-  		
-<div class="row">
-	  			<div class="col-xs-12 col-sm-12 col-md-12">
+	<div class="container">
+  		<div class="row">
+  			<!-- Отзывы -->
+	  		<div class="col-xs-12 col-sm-12 col-md-12">
   				<h1 class="otz_screen_headline">Отзывы</h1>
   			</div>
+  			<!-- ДЛЯ ПК -->
   			<div class="hidden-xs hidden-sm col-md-2 col-lg-2">
-  				<img src="images/glubko.png" width="83%">
+  				<img src="images/glubko.png" width="83%" alt="Лена Глубко, редактор">
+  			</div>
+  			<!-- Отзыв Лены Глубко -->
+  			<div class="hidden-xs hidden-sm col-md-4 col-lg-4">
+  				<div style="margin-left: -30px;">
+  					<p class="otz">Лена Глубко</p>
+  					<p class="otz" style="font-size: 14px; margin-top: -5px;">редактор</p>
+  				</div>
+  			</div>
+  			<!-- Отзыв Ивана Немытченко -->
+  			<div class="hidden-xs hidden-sm col-md-2 col-lg-2">
+  				<img class="img-circle" src="images/nemytchenko.jpg" width="80%" alt="Иван Немытченко, разроботчик">
   			</div>
   			<div class="hidden-xs hidden-sm col-md-4 col-lg-4">
   				<div style="margin-left: -30px;">
-  				<p class="otz">Лена Глубко</p>
-  				<p class="otz" style="font-size: 14px; margin-top: -5px;">редактор</p>
+  					<p class="otz">Иван Немытченко</p>
+  					<p class="otz" style="font-size: 14px; margin-top: -5px;">разработчик</p>
+  				</div>
   			</div>
-  			</div>
-  			<div class="hidden-xs hidden-sm col-md-2 col-lg-2">
-  				<img class="img-circle" src="images/nemytchenko.jpg" width="80%">
-  			</div>
-  			<div class="hidden-xs hidden-sm col-md-4 col-lg-4">
-  				<div style="margin-left: -30px;">
-  				<p class="otz">Иван Немытченко</p>
-  				<p class="otz" style="font-size: 14px; margin-top: -5px;">разработчик</p>
-  			</div>
-  			</div>
+  			<!-- ДЛЯ ПЛАНШЕТОВ И ТЕЛЕФОНОВ -->
   			<div class="row hidden-md hidden-lg">
-  			<div class="col-xs-12 col-sm-12" style="text-align: center; margin-top: 10px;">
-  			<img src="images/glubko.png" width="20%">
-  			<p class="otz" style="margin-top: 20px;">Лена Глубко</p>
-  				<p class="otz" style="font-size: 14px; margin-top: -5px;">редактор</p>
-  		</div>
-  		</div>
+  				<!-- Отзыв Лены Глубко -->
+  				<div class="col-xs-12 col-sm-12" style="text-align: center; margin-top: 10px;">
+  					<img src="images/glubko.png" width="20%" alt="Лена Глубко, редактор">
+  					<p class="otz" style="margin-top: 20px;">Лена Глубко</p>
+  					<p class="otz" style="font-size: 14px; margin-top: -5px;">редактор</p>
+  				</div>
+  			</div>
   			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5" style="margin-top: 30px;">
-  			<p style="color: white;">Я&nbsp;работаю над&nbsp;несколькими проектами одновременно: пишу статью для&nbsp;журнала, верстаю промостраницы, веду два образовательных проекта, собираю идеи и&nbsp;материалы для&nbsp;своего блога. У&nbsp;меня постоянно открыты 3&nbsp;программы: Сублайм-текст, Фотошоп и&nbsp;1Активити. Последняя выполняет работу личного помощника: раскладывает загружаемые файлы, заметки и&nbsp;скриншоты по&nbsp;нужным папкам. Я&nbsp;нажимаю ALT+SPACE и&nbsp;выбираю активный проект, все остальное программа делает сама и&nbsp;не&nbsp;отвлекает от&nbsp;работы.</p>
-  		</div>
-<div class="row hidden-md hidden-lg">
-  			<div class="col-xs-12 col-sm-12" style="text-align: center; margin-top: 80px;">
-  			<img class="img-circle" src="images/nemytchenko.jpg" width="20%">
-  			<p class="otz" style="margin-top: 20px;">Иван Немытченко</p>
-  				<p class="otz" style="font-size: 14px; margin-top: -5px;">разработчик</p>
-  		</div>
-  		</div>
-  		<div class="col-xs-12 col-md-offset-1 col-lg-offset-1 col-sm-12 col-md-5 col-lg-5" style="margin-top: 30px;">
+  				<p style="color: white;">Я&nbsp;работаю над&nbsp;несколькими проектами одновременно: пишу статью для&nbsp;журнала, верстаю промостраницы, веду два образовательных проекта, собираю идеи и&nbsp;материалы для&nbsp;своего блога. У&nbsp;меня постоянно открыты 3&nbsp;программы: Сублайм-текст, Фотошоп и&nbsp;1Активити. Последняя выполняет работу личного помощника: раскладывает загружаемые файлы, заметки и&nbsp;скриншоты по&nbsp;нужным папкам. Я&nbsp;нажимаю ALT+SPACE и&nbsp;выбираю активный проект, все остальное программа делает сама и&nbsp;не&nbsp;отвлекает от&nbsp;работы.</p>
+  			</div>
+			<div class="row hidden-md hidden-lg">
+				<!-- Отзыв Ивана Немытченко -->
+  				<div class="col-xs-12 col-sm-12" style="text-align: center; margin-top: 80px;">
+  					<img class="img-circle" src="images/nemytchenko.jpg" width="20%" alt="Иван Немытченко, разработчик">
+  					<p class="otz" style="margin-top: 20px;">Иван Немытченко</p>
+  					<p class="otz" style="font-size: 14px; margin-top: -5px;">разработчик</p>
+  				</div>
+  			</div>
+  			<div class="col-xs-12 col-md-offset-1 col-lg-offset-1 col-sm-12 col-md-5 col-lg-5" style="margin-top: 30px;">
   			<p style="color: white;">Я&nbsp;работаю над&nbsp;несколькими проектами одновременно: пишу статью для&nbsp;журнала, верстаю промостраницу, веду два образовательных проекта, собираю идеи и&nbsp;материалы для&nbsp;своего блога. У&nbsp;меня постоянно открыты 3&nbsp;программы: Сублайм-текст, Фотошоп и&nbsp;1Активити. Последняя выполняет работу личного помощника: раскладывает загружаемые файлы, заметки и&nbsp;скриншоты по&nbsp;нужным папкам. Я&nbsp;нажимаю ALT+SPACE и&nbsp;выбираю активный проект, все остальное программа делает сама и&nbsp;не&nbsp;отвлекает от&nbsp;работы.</p>
-  		</div>
-</div>
-<div class="row" style="margin-top: 50px; color: white;">
-<div class="col-xs-12">
-	<p style="font-size: 30px; font-weight: 300;">
-Мы&nbsp;постепенно улучшаем программу и&nbsp;добавляем полезные&nbsp;функции</p>
-</div>
-<div class="col-xs-12"> 
-<p style="margin-top: 20px;">Планируем выпустить версию для&nbsp;Виндовс и&nbsp;Линукс.<br>Обо&nbsp;всех обновлениях сообщим на&nbsp;почту:</p>
-<div><form class="signupSubscriberForm" method="post" action="http://skillgrid.campayn.com/contacts/signup_form_add_contact/38318" accept-charset="utf-8">
-              
-              
-                <div class="form-group" style="margin-top: 15px; margin-bottom: 25px;">
-                  <input type="hidden" name="formId" value="39987">
-                  <input type="email" class="form-control" name="email" placeholder="Почта" style="width: 170px;display:inline-block">
-                  <input type="submit" value="Подписаться" class="btn btn-primary">
-                </div>
-                <!-- <br/><small class="special">apply for early access↑</small> -->
-              </form></div>
-          </div>
-          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-7">
-<p>Кроме того, пишем о&nbsp;продуктивности: рассказываем, как настроить Мак&nbsp;ОС, чтобы она по&nbsp;минимуму отвлекала и&nbsp;по&nbsp;максимуму помогала.</p>
+  			</div>
+		</div>
+		<!-- Подписка на рассылку -->
+		<div class="row" style="margin-top: 50px; color: white;">
+			<div class="col-xs-12">
+				<p style="font-size: 30px; font-weight: 300;">Мы&nbsp;постепенно улучшаем программу и&nbsp;добавляем полезные&nbsp;функции</p>
+			</div>
+			<div class="col-xs-12"> 
+				<p style="margin-top: 20px;">Планируем выпустить версию для&nbsp;Виндовс и&nbsp;Линукс.<br>Обо&nbsp;всех обновлениях сообщим на&nbsp;почту:</p>
+			<!-- Форма подписки -->
+			<div>
+				<form class="signupSubscriberForm" method="post" action="http://skillgrid.campayn.com/contacts/signup_form_add_contact/38318" accept-charset="utf-8">
+        			<div class="form-group" style="margin-top: 15px; margin-bottom: 25px;">
+                		<input type="hidden" name="formId" value="39987">
+                		<input type="email" class="form-control" name="email" placeholder="Почта" style="width: 230px;display:inline-block">
+                		<input type="submit" value="Подписаться" class="btn btn-primary">
+            		</div>
+            	</form>
+        	</div>
+    	</div>
+    	<div class="col-xs-12 col-sm-8 col-md-8 col-lg-7">
+			<p>Кроме того, пишем о&nbsp;продуктивности: рассказываем, как настроить Мак&nbsp;ОС, чтобы она по&nbsp;минимуму отвлекала и&nbsp;по&nbsp;максимуму помогала.</p>
+		</div>
 	</div>
-	</div>
-
-</div>
 </div>
 <hr class="hr_dotted">
+<!-- Социокнопки -->
 <div class="raw">
-
-		<div class="col-sx-12" style="text-align: center;">
-<div class="likely likely-light likely_visible likely_ready">
-  <div class="twitter">Твитнуть</div>
-  <div class="facebook">Поделиться</div>
-  <div class="gplus">Плюсануть</div>
-</div>
-</div>
+	<div class="col-sx-12" style="text-align: center;">
+		<div class="likely likely-light likely_visible likely_ready">
+  			<div class="twitter">Твитнуть</div>
+  			<div class="facebook">Поделиться</div>
+  			<div class="gplus">Плюсануть</div>
+		</div>
+	</div>
 </div>
 </section>
-
- </body>
+</body>
