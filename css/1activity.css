@@ -1,25 +1,13 @@
 /*Дополнительные стили для промостраницы OneActivity*/
 
 /*Первый экран*/
-.first_screen {
+.first-screen {
 position: relative;
 padding: 25px 0 35px;
 background: #f6f6f6;
 }
 
-.first_screen_logo img { /*Логотип*/
-max-width: 120px;
-width: 100%;
-margin-top:-1px;
-}
-
-.promo_header { /*Заголовок*/
-font-size: 26px;
-line-height: 1.3;
-font-weight: 300;
-}
-
-.first_screen_headline { /*Подзаголовок*/
+.first-screen__headline_main { /*Заголовок*/
 margin: .3em 0 .6em 0;
 font-size: 40px;
 line-height: 1.3;
@@ -27,153 +15,305 @@ font-weight: 500;
 text-align: center;
 }
 
-.logo {
-position: absolute; 
-top: 20px}
+.first-screen__headline_sub { /*Подзаголовок*/
+font-size: 26px;
+line-height: 1.3;
+font-weight: 300;
+}
 
-.language { 
+.first-screen__logo {
+position: absolute;
+}
+
+.first-screen__logo img { /*Логотип*/
+max-width: 120px;
+width: 100%;
+margin-top:-1px;
+}
+
+.first-screen__logo_headline {/*Название программы*/
+	margin-top:8px;
+	font-size: 14px;}
+
+.first-screen__language {
 text-align: right;
 top: 1em;}
 
-.lang-switch {
+.first-screen__language_switch {/*Переключалка языков*/
 font-size: 14px;
 line-height: 14px;
 margin: 0 0;
 display: inline-block;}
 
-.lang-switch a {
+.first-screen__language_switch a {
 	color: #ccc;
 }
 
+.first-screen__button {/*Кнопка*/
+margin-top:20px;
+}
+
+.first-screen__button_center {
+	text-align: center;}
+
+.first-screen__button_download {
+	font-size: 22px;
+	background: #428ac8;
+	border: none;
+	outline-style: none;
+	margin: 0;
+	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+	padding: 15px 30px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	color: #ffffff;
+	-webkit-transition: background-color .3s ease, -webkit-transform .3s ease, box-shadow .3s ease;
+	-moz-transition: background-color .3s ease, -moz-transform .3s ease, box-shadow .3s ease;
+	-o-transition: background-color .3s ease, -o-transform .3s ease, box-shadow .3s ease;
+	-ms-transition: background-color .3s ease, -ms-transform .3s ease, box-shadow .3s ease;
+	transition: background-color .3s ease, transform .3s ease, box-shadow .3s ease;
+	-webkit-box-shadow: 0 0 0 0 transparent;
+	box-shadow: 0 0 0 0 transparent;
+	}
+
+	.first-screen__button_download:hover {
+	background-color: #4d59a1;
+	}
+
+	.first-screen__button_download:active {
+	-webkit-transform: scale(1.06);
+	-moz-transform: scale(1.06);
+	-o-transform: scale(1.06);
+	-ms-transform: scale(1.06);
+	transform: scale(1.06);
+	-webkit-box-shadow: 0 3px 5px 2px rgba(0, 0, 0, .3);
+	box-shadow: 0 3px 5px 2px rgba(0, 0, 0, .3);
+	}
+
+.first-screen__before {/*Блок «Как обычно»*/
+margin-top: 80px;
+}
+
+.first-screen__before_headline {
+font-size: 20px;
+text-align: center;
+}
+
+.first-screen__before_img {
+	margin-top: 20px;
+}
+
+.first-screen__before_img_caption {
+font-size: 12px;
+margin-top: 10px;
+}
+
+.first-screen__after {/*Блок «С 1 Активити»*/
+margin-top: 80px;
+}
+
+.first-screen__after_headline {
+font-size: 20px;
+text-align: center;
+}
+
+.first-screen__after_img {
+	margin-top: 20px;
+}
+
+.first-screen__after_img_caption {
+font-size: 12px;
+margin-top: 10px;
+margin-bottom: 60px;
+}
+
 /*Второй экран*/
-.second_screen {
+.second-screen {
 position: relative;
 padding: 25px 0 70px;
 }
 
-.second_screen_headline { /*Заголовок*/
+.second-screen__headline { /*Заголовок*/
 margin: .9em 0 .5em 0;
 font-size: 40px;
 line-height: 1.3;
 font-weight: 500;
 }
 
-.help_with { /*Гифка к блоку «Помогает»*/
+.second-screen__help-with_img { /*Гифка к блоку «Помогает»*/
 max-width: 1079px;
 width: 100%;
 margin-bottom: 20px;
-margin-top: 20px;  
+margin-top: 20px;
 border: 2px solid #f6f6f6;
 }
 
-.line { 
-border-left: 2px solid #ccc;
-margin-left: 20px;
-padding-left: 10px; 
+.second-screen__help-with_lg {/*ПК*/
+margin-top: 40px;
 }
 
-/*Кнопка*/
-.first_screen_button {
-margin-top:20px;
+.second-screen__help-with_md {/*ПК*/
+margin-top: 25px;
 }
 
-.first-screen_download, button {
-font-size: 22px;
-background: #428ac8;
-border: none;
-outline-style: none;
-margin: 0;
-font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-padding: 15px 30px;
--webkit-border-radius: 4px;
-border-radius: 4px;
-color: #ffffff;
--webkit-transition: background-color .3s ease, -webkit-transform .3s ease, box-shadow .3s ease;
--moz-transition: background-color .3s ease, -moz-transform .3s ease, box-shadow .3s ease;
--o-transition: background-color .3s ease, -o-transform .3s ease, box-shadow .3s ease;
--ms-transition: background-color .3s ease, -ms-transform .3s ease, box-shadow .3s ease;
-transition: background-color .3s ease, transform .3s ease, box-shadow .3s ease;
--webkit-box-shadow: 0 0 0 0 transparent;
-    box-shadow: 0 0 0 0 transparent;
-}
-
-.first-screen_download:hover, button:hover {
-background-color: #4d59a1;
-}
-
-.first-screen_download:active, button:active {
--webkit-transform: scale(1.06);
--moz-transform: scale(1.06);
--o-transform: scale(1.06);
--ms-transform: scale(1.06);
-transform: scale(1.06);
--webkit-box-shadow: 0 3px 5px 2px rgba(0, 0, 0, .3);
-box-shadow: 0 3px 5px 2px rgba(0, 0, 0, .3);
+.second-screen__help-with_sm-xs {/*Мобильные*/
+margin-top: 15px;
 }
 
 /*Третий экран*/
-.third_screen {
+.third-screen {
 position: relative;
 }
 
-.thrird_screen_headline { /*Заголовок*/
+.thrird-screen__how-to_headline { /*Заголовок*/
 margin: .9em 0 1em 0;
 font-size: 40px;
 line-height: 1.3;
 font-weight: 500;
 }
 
-.gifs {
-margin-bottom: 20px; 
-border:1px solid #e2e2e2; 
+.thrird-screen__how-to_gif { /*Гифки*/
+margin-bottom: 20px;
+border:1px solid #e2e2e2;
 border-radius: 13px;
 }
 
-.hotkeys-img{ /*Картинка «Горячие клавиши»*/
+.thrird-screen__how-to_headline_xs-first { /*Первый заголовок для мобильных*/
+	margin-bottom: 20px;
+}
+
+.thrird-screen__how-to_headline_xs { /*Последующие заголовки для мобильных*/
+margin-bottom: 20px;
+margin-top: 60px;
+}
+
+.thrird-screen__hotkeys_lg-md-sm { /*ПК*/
+	margin-top:60px;
+}
+
+.thrird-screen__hotkeys_img{ /*Картинка «Горячие клавиши»*/
 max-width: 400px;
 width: 100%;
 }
 
-.hotkeys{ 
-font-size: 25px;
-font-weight: 500;	
+.thrird-screen__hotkeys_p {
+ margin-top: 100px;
 }
 
-.h3_xs{
+.thrird-screen__hotkeys_no-mouse{
+font-size: 25px;
+font-weight: 500;
+}
+
+.thrird-screen__hotkeys_headline_xs { /*Мобильные*/
 margin-bottom: 20px;
 margin-top: 60px;
 }
 
 /*Четвертый экран*/
-.fourth_screen {
+.fourth-screen {
 position: relative;
 padding: 20px 0 100px;
 }
 
-.chrome { /*Картинка Хрома*/
+.fourth-screen__chrome_p_sm-md-lg {/*ПК, планшеты*/
+ margin-top: 40px;
+}
+
+.fourth-screen__chrome_p_bottom_sm {/*Планшеты*/
+ margin-top: 20px;
+}
+
+.fourth-screen__chrome_headline-xs {/*Телефон*/
+ margin-bottom: 20px;
+}
+
+.fourth-screen__chrome_img {
 max-width: 704px;
 width: 100%;}
 
-.link { /*Подчеркнутая ссылка*/
+.fourth-screen__chrome_img_md-lg {/*ПК*/
+max-width: 704px;
+width: 100%;
+margin-top: 65px;
+}
+
+.fourth-screen__chrome_img_sm { /*Планшет*/
+max-width: 704px;
+width: 100%;
+margin-top: 30px;
+}
+
+.fourth-screen__chrome_img_xs { /*Телефон*/
+max-width: 704px;
+width: 100%;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+
+
+.fourth-screen__chrome_link { /*Подчеркнутая ссылка*/
 color: #0060a0;
 border-color: rgba(0,96,160,.2);
 border-bottom-width: 1px;
 border-bottom-style: solid;
 }
 
-.link:hover {
+.fourth-screen__chrome_link:hover {
   color: #ff6666;
   border-color: #ff6666;
 }
 
-/*Отзывы*/ 
-.otz_screen {
+.fourth-screen__button {/*Кнопка*/
+margin-top:50px;
+}
+
+.fourth-screen__button_center {
+	text-align: center;}
+
+.fourth-screen__button_download {
+	font-size: 22px;
+	background: #428ac8;
+	border: none;
+	outline-style: none;
+	margin: 0;
+	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+	padding: 15px 30px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	color: #ffffff;
+	-webkit-transition: background-color .3s ease, -webkit-transform .3s ease, box-shadow .3s ease;
+	-moz-transition: background-color .3s ease, -moz-transform .3s ease, box-shadow .3s ease;
+	-o-transition: background-color .3s ease, -o-transform .3s ease, box-shadow .3s ease;
+	-ms-transition: background-color .3s ease, -ms-transform .3s ease, box-shadow .3s ease;
+	transition: background-color .3s ease, transform .3s ease, box-shadow .3s ease;
+	-webkit-box-shadow: 0 0 0 0 transparent;
+	box-shadow: 0 0 0 0 transparent;
+	}
+
+	.fourth-screen__button_download:hover {
+	background-color: #4d59a1;
+	}
+
+	.fourth-screen__button_download:active {
+	-webkit-transform: scale(1.06);
+	-moz-transform: scale(1.06);
+	-o-transform: scale(1.06);
+	-ms-transform: scale(1.06);
+	transform: scale(1.06);
+	-webkit-box-shadow: 0 3px 5px 2px rgba(0, 0, 0, .3);
+	box-shadow: 0 3px 5px 2px rgba(0, 0, 0, .3);
+	}
+
+/*Отзывы*/
+.fifth-screen {
 position: relative;
 padding: 20px 0 35px;
 background-color: black;
 }
 
-.otz_screen_headline {
+.fifth-screen__feedback_headline {
 margin: .9em 0 1.3em 0;
 font-size: 40px;
 color: white;
@@ -181,26 +321,64 @@ line-height: 1.3;
 font-weight: 500;
 }
 
-.otz{
+.fifth-screen__feedback_Lena-Ivan_md-lg {/*ПК*/
+ margin-left: -30px;
+}
+
+.fifth-screen__feedback_Lena_sm-xs {/*Мобильные*/
+text-align: center;
+margin-top: 10px;
+}
+
+.fifth-screen__feedback_Ivan_sm-xs {/*Мобильные*/
+text-align: center;
+margin-top: 80px;
+}
+
+.fifth-screen__feedback_name_sm-xs {/*Мобильные*/
+ margin-top: 20px;
+}
+
+.fifth-screen__feedback_p_white {/*Белый шрифт*/
 color: white;
 }
 
-/*Подписка*/ 
-.soon_screen {
-position: relative;
-padding: 20px 0 35px;
-background-color: black;
+.fifth-screen__feedback_profession {
+ font-size: 14px;
+ margin-top: -5px;
 }
 
-.hr_dotted {
+.fifth-screen__feedback_text_sm-xs {/*Текст отзыва для мобильных*/
+ margin-top: 30px;
+}
+
+/*Подписка*/
+
+.fifth-screen__subscribe {
+margin-top: 50px;
+color: white;
+}
+
+.fifth-screen__subscribe_headline {
+font-size: 30px;
+font-weight: 300;
+}
+
+.fifth-screen__subscribe_p {
+margin-top: 20px;
+}
+
+.fifth-screen__subscribe_form {/*Форма подписки*/
+margin-top: 15px;
+margin-bottom: 25px;
+}
+
+.fifth-screen__hr_dotted {
 border: 0;
 border-bottom: 1px dashed #fff;
 background: #000;
 }
 
-.ul {
-list-style:none;
-padding:0px;
-margin:0px;
-margin-bottom:30px;
+.fifth-screen__likely {/*Соц. кнопки*/
+ text-align: center;
 }
