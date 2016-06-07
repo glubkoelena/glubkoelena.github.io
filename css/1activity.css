@@ -355,7 +355,7 @@ color: white;
 /*Подписка*/
 
 .fifth-screen__subscribe {
-margin-top: 50px;
+margin-top: 60px;
 color: white;
 }
 
@@ -365,12 +365,12 @@ font-weight: 300;
 }
 
 .fifth-screen__subscribe_p {
-margin-top: 20px;
+margin-top: 30px;
 }
 
 .fifth-screen__subscribe_form {/*Форма подписки*/
-margin-top: 15px;
-margin-bottom: 25px;
+margin-top: 8px;
+padding-bottom: 15px;
 }
 
 .fifth-screen__hr_dotted {
