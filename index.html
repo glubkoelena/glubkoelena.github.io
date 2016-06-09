@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Мета, титл -->
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="1Актвити — полезная программа для Мак ОС. Сортирует файлы по проектам, не захламляет папку загрузок. ">
+<meta name="keywords" content="OneActivity, 1Activity, утилита для мак ос, сортирует файлы по папкам, ProductiveMode">
+<meta http-equiv="Cache-Control" content="max-age=86400">
+<title>1Активити: программа для работы с файлами</title>
+<!-- Свои стили -->
+ <link href="css/1activity.css" rel="stylesheet">
+<!-- Бутстрап -->
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Лайкли -->
+ <script src="ilya-birman-likely/likely.js"></script>
+ <link rel="stylesheet" href="ilya-birman-likely/likely.css">
+ <!-- Джава Скрипт -->
+ <script src="js/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+  </head>
+<body>
+<!-- Первый экран -->
+<section class="first-screen">
+<div class="container">
+  <div class="row">
+  	<div class="col-xs-9 col-sm-10 col-md-11 col-lg-10">
+  	</div>
+  	<!-- Языки -->
+  	<div class="col-xs-3 col-sm-2 col-md-1 col-lg-2">
+  		<div class="first-screen__language">
+        	<p class="first-screen__language_switch">RU</p>
+        	<p class="first-screen__language_switch"><a href="http://productivitymode.com/oneactivity/">EN</a></p>
+    	</div>
+	</div>
+	<!-- Логотип -->
+  	<div class="first-screen__button_center">
+  		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 first-screen__logo">
+  			<img src="images/prodactivity.png" alt="Логотип 1Активити"><p class="first-screen__logo_headline">1Активити&nbsp;для&nbsp;Мак&nbsp;ОС</p>
+  		</div>
+  		<!-- Главный заголовок и подзаголовок -->
+  		<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+  			<h1 class="first-screen__headline_main">Упрощает работу над&nbsp;проектами</h1>
+  			<h2 class="first-screen__headline_sub">Сортирует файлы по&nbsp;проектам. Не&nbsp;захламляет папку&nbsp;загрузок</h2>
+  		</div>
+  	</div>
+ </div>
+</div>
+<div class="container">
+	<div class="row">
+		<!-- Кнопка «Купить» -->
+  		<div class="first-screen__button">
+  			<div class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9 first-screen__button_center">
+  			<form method="POST" action="http://sites.fastspring.com/prodactivity/product/1activity?action=order" target="_top"><input type="submit" value="Купить за $3.99" class="first-screen__button_download"></form>
+  			</div>
+  		</div>
+  	</div>
+</div>
+<div class="container">
+  	<div class="row">
+  		<!-- Сравнение: до и после -->
+  		<div class="col-xs-12 col-sm-6 col-md-6 first-screen__before">
+  			<p class="first-screen__before_headline">Как обычно</p>
+			<img src="images/before-grey.png" class="first-screen__before_img" width="100%" alt="Беспорядок в папке загрузок">
+			<p class="first-screen__before_img_caption">Свалка разрозненных файлов</p>
+  		</div>
+  		<div class="col-xs-12 col-sm-6 col-md-6 first-screen__after">
+  			<p class="first-screen__after_headline">С&nbsp;1Активити</p>
+			<img src="images/after-grey.png" class="first-screen__after_img " width="100%" alt="1Активити разложила файлы по папкам проектов">
+      <p class="first-screen__after_img_caption">Файлы разложены по&nbsp;проектам. Чистота и&nbsp;порядок</p>
+  		</div>
+  	</div>
+</div>
+</section>
+<section class="second-screen">
+<div class="container">
+  	<div class="row">
+  		<!-- Блок «Помогает» -->
+  		<div class="col-xs-12 col-sm-12 col-md-12">
+  				<h1 class="second-screen__headline">Помогает</h1>
+  		</div>
+  		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-7">
+			<img src="images/helpwith.gif" class="second-screen__help-with_img" alt="1Активити помогает работать над проектами, писать курсовую, готовиться к конференции, собирать материалы для блога, планировать путешествия">
+  		</div>
+  		<div class="hidden-xs hidden-sm hidden-md col-lg-offset-1 col-lg-4 second-screen__help-with_lg">
+  			<p>Можете забыть о&nbsp;<em>«Сохранить как...»</em> и&nbsp;больше не&nbsp;отвлекаться от&nbsp;работы. Все&nbsp;загружаемые файлы автоматически попадают в&nbsp;рабочий проект.</p>
+  		</div>
+  		<div class="hidden-xs hidden-sm hidden-lg col-md-4 second-screen__help-with_md">
+  			<p>Можете забыть о&nbsp;<em>«Сохранить как...»</em> и&nbsp;больше не&nbsp;отвлекаться от&nbsp;работы. Все&nbsp;загружаемые файлы автоматически попададут в&nbsp;рабочий проект.</p>
+  		</div>
+  		<div class="hidden-md hidden-lg col-sm-12 col-xs-12 second-screen__help-with_sm-xs">
+  			<p>Можете забыть о&nbsp;<em>«Сохранить как...»</em> и&nbsp;больше не&nbsp;отвлекаться от&nbsp;работы. Все&nbsp;загружаемые файлы автоматически попададут в&nbsp;рабочий проект.</p>
+  		</div>
+  	</div>
+</div>
+</section>
+<hr>
+<section class="third-screen">
+<div class="container">
+  	<div class="row">
+  		<!-- Блок «Как работает» -->
+  		<div class="col-xs-12 col-sm-12 col-md-12">
+  			<h1 class="thrird-screen__how-to_headline">Как работает</h1>
+  		</div>
+  			<!-- Скрипт тегов -->
+			<script type="text/javascript"> $(function () {
+		    $('.nav-tabs a:first').tab('show');});</script>
+		<!-- ДЛЯ ПЛАШЕТОВ И ПК -->
+  		<div class="hidden-xs col-sm-4 col-md-3">
+  			<!-- Меню функций -->
+  			<ul class="nav nav-tabs">
+                <li class="active"><a href="#project" data-toggle="tab" aria-expanded="true"> Выбирайте проект</a></li>
+                <li><a href="#copypast" data-toggle="tab"> Копируйте текст</a></li>
+                <li><a href="#screenshot" data-toggle="tab"> Делайте скриншоты</a></li>
+                <li><a href="#url" data-toggle="tab"> Сохраняйте ссылки</a></li>
+                <li><a href="#notes" data-toggle="tab"> Пишите заметки</a></li>
+             </ul>
+		</div>
+		<div class="hidden-xs col-sm-8 col-md-9">
+			<!-- Гифки для каждой функции -->
+            <div class="tab-content">
+            	<!-- Новый проект -->
+          	    <div class="tab-pane fade active in" id="project">
+                  <video class="thrird-screen__how-to_video" width="100%" autoplay="autoplay" loop="loop" preload="auto">
+                	   <source src="video/create_folder.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                     <source src="video/create_folder.webm" type='video/webm; codecs="vp8, vorbis"'>
+                	   Ваш браузер устарел и не может прокрутить видео на этом сайте.
+                	   <a href="video/create_folder.mp4">Скачайте видео</a>, чтобы посмотреть с компьютера.
+                	  </video>
+		             <p>Допустим, вы пишете статью о&nbsp;верстке. Создайте папку, в&nbsp;которую будете складывать весь материал. Если откроете файндер, сразу окажетесь в&nbsp;созданной папке.</p>
+		        </div>
+	        	<!-- Копипаст -->
+	            <div class="tab-pane fade" id="copypast">
+                <video class="thrird-screen__how-to_video" width="100%" autoplay="autoplay" loop="loop" preload="auto">
+                   <source src="video/clipboard.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                   <source src="video/clipboard.webm" type='video/webm; codecs="vp8, vorbis"'>
+                   Ваш браузер устарел и не может прокрутить видео на этом сайте.
+                   <a href="video/clipboard.mp4">Скачайте видео</a>, чтобы посмотреть с компьютера.
+                  </video>
+		              <p>Копируйте любой текст: из&nbsp;браузера, документа, письма. Текст в&nbsp;формате .md переместится в&nbsp;рабочую папку и&nbsp;откроется любым блокнотом.</p>
+		        </div>
+	            <!-- Скриншоты -->
+	            <div class="tab-pane fade" id="screenshot">
+                <video class="thrird-screen__how-to_video" width="100%" autoplay="autoplay" loop="loop" preload="auto">
+                   <source src="video/screenshot.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                   <source src="video/screenshot.webm" type='video/webm; codecs="vp8, vorbis"'>
+                   Ваш браузер устарел и не может прокрутить видео на этом сайте.
+                   <a href="video/screenshot.mp4">Скачайте видео</a>, чтобы посмотреть с компьютера.
+                  </video>
+		             <p>Скриншоты автоматически попадут в&nbsp;рабочую папку.</p>
+		        </div>
+	            <!-- Ссылки -->
+	            <div class="tab-pane fade" id="url">
+                <video class="thrird-screen__how-to_video" width="100%" autoplay="autoplay" loop="loop" preload="auto">
+                   <source src="video/url.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                   <source src="video/url.webm" type='video/webm; codecs="vp8, vorbis"'>
+                   Ваш браузер устарел и не может прокрутить видео на этом сайте.
+                   <a href="video/url.mp4">Скачайте видео</a>, чтобы посмотреть с компьютера.
+                  </video>
+		             <p>Сохраняйте нужные ссылки в&nbsp;папке проекта. Откроются в&nbsp;любом браузере.</p>
+	            </div>
+	            <!-- Заметки -->
+	            <div class="tab-pane fade" id="notes">
+                <video class="thrird-screen__how-to_video" width="100%" autoplay="autoplay" loop="loop" preload="auto">
+                   <source src="video/note.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                   <source src="video/note.webm" type='video/webm; codecs="vp8, vorbis"'>
+                   Ваш браузер устарел и не может прокрутить видео на этом сайте.
+                   <a href="video/note.mp4">Скачайте видео</a>, чтобы посмотреть с компьютера.
+                  </video>
+		            <p>Внезапные идеи и&nbsp;мысли не&nbsp;потеряются&nbsp;— занесите их в&nbsp;заметки, и&nbsp;они сохранятся в&nbsp;рабочей папке. Откроются любым блокнотом.  </p>
+		        </div>
+            </div>
+        </div>
+        <!-- ДЛЯ ТЕЛЕФОНОВ -->
+		<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+			<h3 class="thrird-screen__how-to_headline_xs-first">Выбирайте проект</h3>
+      <video class="thrird-screen__how-to_video" width="100%" autoplay="autoplay" loop="loop" preload="auto">
+         <source src="video/create_folder.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+         <source src="video/create_folder.webm" type='video/webm; codecs="vp8, vorbis"'>
+         Ваш браузер устарел и не может прокрутить видео на этом сайте.
+         <a href="video/create_folder.mp4">Скачайте видео</a>, чтобы посмотреть с компьютера.
+        </video>
+		    <p>Допустим, вы пишете статью о&nbsp;верстке. Создайте папку, в&nbsp;которую будете складывать весь материал. Если откроете файндер, сразу окажетесь в&nbsp;созданной папке.</p>
+			<h3 class="thrird-screen__how-to_headline_xs">Копируйте текст</h3>
+      <video class="thrird-screen__how-to_video" width="100%" autoplay="autoplay" loop="loop" preload="auto">
+         <source src="video/clipboard.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+         <source src="video/clipboard.webm" type='video/webm; codecs="vp8, vorbis"'>
+         Ваш браузер устарел и не может прокрутить видео на этом сайте.
+         <a href="video/clipboard.mp4">Скачайте видео</a>, чтобы посмотреть с компьютера.
+        </video>
+		    <p>Копируйте любой текст: из&nbsp;браузера, документа, письма. Текст в&nbsp;формате .md переместится в&nbsp;рабочую папку и&nbsp;откроется любым блокнотом.</p>
+			<h3 class="thrird-screen__how-to_headline_xs">Делайте скриншоты</h3>
+      <video class="thrird-screen__how-to_video" width="100%" autoplay="autoplay" loop="loop" preload="auto">
+         <source src="video/screenshot.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+         <source src="video/screenshot.webm" type='video/webm; codecs="vp8, vorbis"'>
+         Ваш браузер устарел и не может прокрутить видео на этом сайте.
+         <a href="video/screenshot.mp4">Скачайте видео</a>, чтобы посмотреть с компьютера.
+        </video>
+			<p>Скриншоты автоматически попадут в&nbsp;рабочую папку. </p>
+			<h3 class="thrird-screen__how-to_headline_xs">Сохраняйте ссылки</h3>
+      <video class="thrird-screen__how-to_video" width="100%" autoplay="autoplay" loop="loop" preload="auto">
+         <source src="video/url.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+         <source src="video/url.webm" type='video/webm; codecs="vp8, vorbis"'>
+         Ваш браузер устарел и не может прокрутить видео на этом сайте.
+         <a href="video/url.mp4">Скачайте видео</a>, чтобы посмотреть с компьютера.
+        </video>
+		    <p>Сохраняйте нужные ссылки в&nbsp;папке проекта. Откроются в&nbsp;любом браузере.</p>
+		    <h3 class="thrird-screen__how-to_headline_xs">Делайте заметки</h3>
+        <video class="thrird-screen__how-to_video" width="100%" autoplay="autoplay" loop="loop" preload="auto">
+           <source src="video/screenshot.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+           <source src="video/screenshot.webm" type='video/webm; codecs="vp8, vorbis"'>
+           Ваш браузер устарел и не может прокрутить видео на этом сайте.
+           <a href="video/screenshot.mp4">Скачайте видео</a>, чтобы посмотреть с компьютера.
+          </video>
+		    <p>Внезапные идеи и&nbsp;мысли не&nbsp;потеряются&nbsp;— занесите их в&nbsp;заметки, и&nbsp;они сохранятся в&nbsp;рабочей папке. Откроются любым блокнотом.  </p>
+		    <h3 class="thrird-screen__hotkeys_headline_xs">Используйте горячие клавиши</h3>
+			<img class="thrird-screen__hotkeys_img" src="images/hotkeys-rus.png" alt="Горячие клавиши">
+  			<p>Можете задавать свои комбинации, но&nbsp;следите, чтобы они не&nbsp;использовались другими программами.</p>
+		</div>
+	</div>
+	<!-- ДЛЯ ПЛАНШЕТОВ И ПК -->
+	<div class="row hidden-xs thrird-screen__hotkeys_lg-md-sm">
+		<!-- Горячие клавиши -->
+        <div class="col-sm-5 col-md-6 col-lg-6">
+  			<img src="images/hotkeys-rus.png" class="thrird-screen__hotkeys_img" alt="Горячие клавиши">
+  		</div>
+		<div class="col-sm-7 col-md-6 col-lg-6 thrird-screen__hotkeys_p">
+  			<p>Используйте горячие клавиши.</p>
+  			<p>Можете задавать свои комбинации, но&nbsp;сначала проверьте, не&nbsp;используются&nbsp;ли они другой программой.</p>
+  		<div>
+  		<!-- СКРЫТЬ МЫШКУ-ТАЧПАД ДЛЯ ПЛАНШЕТА -->
+		<div class="hidden-sm">
+  			<div class="thrird-screen__hotkeys_no-mouse"><span><del>мышка</del></span><span style="margin-left: 30px;"><del>тачпад</del></span><span style="margin-left: 30px;">⌘</span>
+  			</div>
+  		<div>
+  	</div>
+</div>
+</section>
+<section class="fourth-screen">
+<div class="container">
+	<!-- Про Гугл Хром -->
+  	<div class="row">
+  		<!-- ДЛЯ ПК -->
+		<div class="hidden-xs hidden-sm col-md-5 col-lg-5 fourth-screen__chrome_p_sm-md-lg">
+      		<p>Гугл Хром все загружаемые файлы помещает в&nbsp;рабочую папку.</p>
+      		<p>Допустим, сейчас вы работаете с&nbsp;папкой <em>«Учебные материалы»</em>, и&nbsp;все файлы автоматически скачиваются в&nbsp;эту папку. Если вы переключитесь на&nbsp;другую папку, все новые файлы будут закачиваться уже в&nbsp;нее.</p>
+      		<p><a href="http://productivitymode.com/oneactivity/setup/" class="fourth-screen__chrome_link">Как настроить Хром</a></p>
+  		</div>
+  		<div class="hidden-xs hidden-sm col-md-offset-1 col-lg-offset-1 col-md-6 col-lg-6">
+  			<img src="images/chrome.png" class="fourth-screen__chrome_img_md-lg" alt="Все файлы, сохраненные в Гугл Хроме, попадут в рабочую папку">
+  		</div>
+	</div
+	<div class="row">
+		<!-- ДЛЯ ПЛАНШЕТОВ -->
+		<div class="hidden-xs hidden-md hidden-lg col-sm-4 fourth-screen__chrome_p_sm-md-lg">
+			<p>Все загружаемые файлы Хром помещает в&nbsp;рабочую папку.</p>
+		</div>
+		<div class="hidden-xs hidden-md hidden-lg col-sm-offset-1 col-sm-7">
+  		<img src="images/chrome.png" class="fourth-screen__chrome_img_sm" alt="Все файлы, сохраненные в Гугл Хроме, попадут в рабочую папку">
+  		</div>
+		<div class="hidden-xs hidden-md hidden-lg col-sm-offset-5 col-sm-7 fourth-screen__chrome_p_bottom_sm">
+			<p>Допустим, сейчас вы работаете с&nbsp;папкой <em>«Учебные материалы»</em>, и&nbsp;все файлы автоматически скачиваются в&nbsp;эту папку. Если вы переключитесь на&nbsp;другую папку, все новые файлы будут закачиваться уже в&nbsp;нее.</p>
+      		<p><a href="http://productivitymode.com/oneactivity/setup/" class="fourth-screen__chrome_link">Как настроить Хром</a></p>
+  		</div>
+	<div class="row">
+		<!-- ДЛЯ ТЕЛЕФОНОВ -->
+		<div class="hidden-sm hidden-md hidden-lg col-xs-12">
+			<h3 class="fourth-screen__chrome_headline-xs">Работайте в&nbsp;Хроме</h3>
+			<p>Гугл Хром все загружаемые файлы помещает в&nbsp;рабочую папку.</p>
+			<img src="images/chrome.png" class="fourth-screen__chrome_img_xs" alt="Все файлы, сохраненные в Гугл Хроме, попадут в рабочую папку">
+		</div>
+		<div class="hidden-sm hidden-md hidden-lg col-xs-12">
+  			<p>Допустим, сейчас вы работаете с&nbsp;папкой <em>«Учебные материалы»</em>, и&nbsp;все файлы автоматически скачиваются в&nbsp;эту папку. Если вы переключитесь на&nbsp;другую папку, все новые файлы будут закачиваться уже в&nbsp;нее.</p>
+      		<p><a href="http://productivitymode.com/oneactivity/setup/" class="fourth-screen__chrome_link">Как настроить Хром</a></p>
+  		</div>
+    </div>
+    <!-- Кнопка «Купить» -->
+  	<div class="fourth-screen__button">
+  		<div class="col-xs-12 fourth-screen__button_center">
+  			<form method="POST" action="http://sites.fastspring.com/prodactivity/product/1activity?action=order" target="_top"><div><input type="submit" value="Купить за $3.99" class="fourth-screen__button_download"></form>
+  		</div>
+  	</div>
+</div>
+</section>
+<section class="fifth-screen">
+	<div class="container">
+  		<div class="row">
+  			<!-- Отзывы -->
+	  		<div class="col-xs-12 col-sm-12 col-md-12">
+  				<h1 class="fifth-screen__feedback_headline">Отзывы</h1>
+  			</div>
+  			<!-- ДЛЯ ПК -->
+  			<div class="hidden-xs hidden-sm col-md-2 col-lg-2">
+  				<img src="images/glubko.png" width="83%" alt="Лена Глубко, редактор">
+  			</div>
+  			<!-- Отзыв Лены Глубко -->
+  			<div class="hidden-xs hidden-sm col-md-4 col-lg-4">
+  				<div class="fifth-screen__feedback_Lena-Ivan_md-lg">
+  					<p class="fifth-screen__feedback_p_white">Лена Глубко</p>
+  					<p class="fifth-screen__feedback_p_white fifth-screen__feedback_profession">редактор</p>
+  				</div>
+  			</div>
+  			<!-- Отзыв Ивана Немытченко -->
+  			<div class="hidden-xs hidden-sm col-md-2 col-lg-2">
+  				<img class="img-circle" src="images/nemytchenko.jpg" width="80%" alt="Иван Немытченко, разроботчик">
+  			</div>
+  			<div class="hidden-xs hidden-sm col-md-4 col-lg-4">
+  				<div class="fifth-screen__feedback_Lena-Ivan_md-lg">
+  					<p class="fifth-screen__feedback_p_white">Иван Немытченко</p>
+  					<p class="fifth-screen__feedback_p_white fifth-screen__feedback_profession">разработчик</p>
+  				</div>
+  			</div>
+  			<!-- ДЛЯ ПЛАНШЕТОВ И ТЕЛЕФОНОВ -->
+  			<div class="row hidden-md hidden-lg">
+  				<!-- Отзыв Лены Глубко -->
+  				<div class="col-xs-12 col-sm-12 fifth-screen__feedback_Lena_sm-xs">
+  					<img src="images/glubko.png" width="20%" alt="Лена Глубко, редактор">
+  					<p class="fifth-screen__feedback_p_white fifth-screen__feedback_name_sm-xs">Лена Глубко</p>
+  					<p class="fifth-screen__feedback_p_white fifth-screen__feedback_profession">редактор</p>
+  				</div>
+  			</div>
+  			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 fifth-screen__feedback_text_sm-xs">
+  				<p class="fifth-screen__feedback_p_white">Я&nbsp;работаю над&nbsp;несколькими проектами одновременно: пишу статью для&nbsp;журнала, верстаю промостраницы, веду два образовательных проекта, собираю идеи и&nbsp;материалы для&nbsp;своего блога. У&nbsp;меня постоянно открыты 3&nbsp;программы: Саблаймтекст, Фотошоп и&nbsp;1Активити. Последняя выполняет работу личного помощника: раскладывает загружаемые файлы, заметки и&nbsp;скриншоты по&nbsp;нужным папкам. Я&nbsp;нажимаю ALT+SPACE и&nbsp;выбираю активный проект, все остальное программа делает сама и&nbsp;не&nbsp;отвлекает от&nbsp;работы.</p>
+  			</div>
+			<div class="row hidden-md hidden-lg">
+				<!-- Отзыв Ивана Немытченко -->
+  				<div class="col-xs-12 col-sm-12 fifth-screen__feedback_Ivan_sm-xs">
+  					<img class="img-circle" src="images/nemytchenko.jpg" width="20%" alt="Иван Немытченко, разработчик">
+  					<p class="fifth-screen__feedback_p_white fifth-screen__feedback_name_sm-xs">Иван Немытченко</p>
+  					<p class="fifth-screen__feedback_p_white fifth-screen__feedback_profession">разработчик</p>
+  				</div>
+  			</div>
+  			<div class="col-xs-12 col-md-offset-1 col-lg-offset-1 col-sm-12 col-md-5 col-lg-5 fifth-screen__feedback_text_sm-xs">
+  			<p class="fifth-screen__feedback_p_white">По&nbsp;работе мне часто приходится работать над&nbsp;презентациями. Презентация — это текстовый файл с&nbsp;markdown-разметкой и&nbsp;куча картинок. Часть картинок я ищу в&nbsp;интернете. Здесь выручает 1Активити с&nbsp;возможностью складывать все скачанные файлы и&nbsp;делать скриншоты сразу в&nbsp;нужную папку. Мне не&nbsp;приходится тратить время на&nbsp;бесконечное перетаскивание файлов в&nbsp;файндере. Еще я экспериментирую с&nbsp;хранением ссылок локально в&nbsp;виде .webloc. Раньше для этого пользовался плагином <a href="http://www.one-tab.com/" style="color: white;">OneTab,</a> но он тормозит, когда ссылок сохранено слишком много.</p>
+  			</div>
+		</div>
+		<!-- Подписка на рассылку -->
+		<div class="row fifth-screen__subscribe">
+			<div class="col-xs-12">
+				<p class="fifth-screen__subscribe_headline">Мы&nbsp;постепенно улучшаем программу и&nbsp;добавляем полезные&nbsp;функции</p>
+			  <p class="fifth-screen__subscribe_p">Планируем выпустить версию для&nbsp;Виндовс и&nbsp;Линукс.<br>Обо&nbsp;всех обновлениях сообщим на&nbsp;почту:</p>
+      </div>
+			<!-- Форма подписки -->
+        <div class="hidden-md hidden-lg col-xs-12">
+				<form class="signupSubscriberForm" method="post" action="http://skillgrid.campayn.com/contacts/signup_form_add_contact/38318" accept-charset="utf-8">
+        			<div class="form-group fifth-screen__subscribe_form">
+                		<input type="hidden" name="formId" value="39987">
+                		<input type="email" class="form-control" name="email" placeholder="Почта" style="width: 150px; display:inline-block">
+                		<input type="submit" value="Ввести" class="btn btn-primary">
+            		</div>
+            	</form>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-12">
+    				<form class="signupSubscriberForm" method="post" action="http://skillgrid.campayn.com/contacts/signup_form_add_contact/38318" accept-charset="utf-8">
+            			<div class="form-group fifth-screen__subscribe_form">
+                    		<input type="hidden" name="formId" value="39987">
+                    		<input type="email" class="form-control" name="email" placeholder="Почта" style="width: 230px; display:inline-block">
+                    		<input type="submit" value="Подписаться" class="btn btn-primary">
+                		</div>
+                	</form>
+                </div>
+
+    	<div class="col-xs-12 col-sm-8 col-md-8 col-lg-7">
+			<p>Кроме того, пишем о&nbsp;продуктивности: рассказываем, как настроить Мак&nbsp;ОС, чтобы она по&nbsp;минимуму отвлекала и&nbsp;по&nbsp;максимуму помогала.</p>
+		</div>
+	</div>
+</div>
+<hr class="fifth-screen__hr_dotted">
+<!-- Социокнопки -->
+<div class="raw">
+	<div class="col-sx-12 fifth-screen__likely">
+		<div class="likely likely-light likely_visible likely_ready">
+  			<div class="twitter">Твитнуть</div>
+  			<div class="facebook">Поделиться</div>
+  			<div class="gplus">Плюсануть</div>
+		</div>
+	</div>
+</div>
+</section>
+</body>
