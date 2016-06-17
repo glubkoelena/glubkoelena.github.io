@@ -1,0 +1,38 @@
+
+.product span.minus, .product span.plus {cursor: pointer; width: 13px;}
+span.minus {margin: 2px 2px 0 10px;}
+span.plus {margin: -1px 0 0 2px;}
+.minus_hidden, .plus_hidden {overflow: hidden;}
+.rouble {width: 20px; margin-left: 5px; text-align: left; font-size: 14px;}
+.price {padding-right: 13px;}
+.product-price {margin-top: 1px;}
+.qnt {padding-right: 10px;}
+.plus {font-size: 18px;}
+.mon {display: inline-block; width: 20px; margin-left: 5px; text-align: left; font-size: 10px;}
+#budget {padding: 5px 0 0 11px;}
+#budget .total {text-align: right; font-size: 32px; font-weight: bold; overflow: hidden; padding: 0 0 15px; width: 100%;}
+#budget .total .totalTxt {float: left;}
+#budget .main-total {float: right; font-weight: bold;}
+#budget .sub-total {background: #ebf0f3; color: #303067; font: 18px/30px Helvetica,sans-serif; height: 31px; overflow: hidden; padding: 0 21px 0 10px;}
+#budget .sub-total .totalTxt {float: left;}
+#budget .sub-cost {float: right;}
+#budget p {color: #333; font: 13px/20px Arial,Helvetica,sans-serif;}
+#budget .budget-txt {padding: 0 0 25px;}
+#budget .main_block {background-color: rgba(246, 244, 219, 0.3); padding-top: 5px;}
+#budget ul {overflow: hidden;}
+#budget li {list-style: none outside none; float: left;}
+#budget ul.product {padding: 3px 0 5px 0;}
+#budget ul.product .check {padding: 4px 5px; margin: 0px 0px 5px 10px;}
+#budget ul.product .title {font: 17px/20px Helvetica, sans-serif; padding: 4px 0 0 10px; width: 200px; font-weight: normal;}
+#budget ul.product .price-item {font-size: 14px; margin: 4px 0 0; text-align: right; width: 117px;}
+#budget ul.product.product_uncheck {color: rgba(153, 153, 153, 0.51);}
+#budget ul.product_uncheck .price-item {visibility: hidden;}
+#budget ul.product .pqm {text-align: center;}
+#budget ul.product .pqm .price input {width: 68px;}
+#budget ul.product .pqm .qnt input {width: 33px;}
+#budget ul.product .pqm .qnt  .units {display: inline-block; width: 18px; margin-left: 5px; text-align: left; font-size: 10px;}
+#budget ul.product .pqm .months input {width: 33px;}
+#budget ul.product .pqm .c_text {text-align: center;}
+#budget .input__cost {margin: 0 5px 0 0;}
+#budget .input__cost span {padding-left: 4px;}
+#budget .input__cost b {width: 3px;}
