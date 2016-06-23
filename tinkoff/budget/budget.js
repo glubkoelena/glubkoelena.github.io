@@ -1,19 +1,6 @@
 jQuery(document).ready(function($){
 
-     $('ul.table_title').click(function() {
 
-        if($(this).next('div.main_block').toggle().is(':visible')) {
-
-            $(this).find('li.button_closer i').
-                removeClass('plus_hidden').addClass('minus_hidden');
-        }
-        else {
-
-                removeClass('minus_hidden').addClass('plus_hidden');
-        }
-
-        recalculate();
-    });
 
 });
 
@@ -44,7 +31,7 @@ function recalculate() {
     var total = 0;
     var subtotal = [];
 
-    $('#budget div.main_block').each(function() {
+    $('#baby-cost div.main-block').each(function() {
         var totalCategory = 0;
 
         $(this).find('ul.product:not(.product_uncheck)').each(function() {
@@ -58,7 +45,7 @@ function recalculate() {
             $(this).find('li.price-item span b').html(productPrice.format(2));
             totalCategory += productPrice;
         });
-        $(this).prev('ul.table_title').find('li.year span').html(totalCategory.format(2));
+        $(this).prev('').find('li.year span').html(totalCategory.format(2));
         var parentCategory = $(this).prevAll('div.sub-total:first');
         if (parentCategory.length) {
             var parentCategoryId = parentCategory.find('span.sub-cost span').attr('id');
@@ -73,7 +60,7 @@ function recalculate() {
         for (var id in subtotal)
             $('#' + id).html(subtotal[id].format(2));
     }
-    $('#budget div.total span.main-total span').html(total.format(2));
+    $('#baby-cost div.total span.main-total span').html(total.format(2));
 }
 
 
@@ -174,14 +161,7 @@ function setHandlers() {
 
 
 
-    $('#budget-reset-button').click(function() {
-        if (window.confirm('Начать заново?')) {
-            reset();
-            recalculate();
-        }
 
-        return false;
-    });
 }
 
 

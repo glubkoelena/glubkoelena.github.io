@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Мета, титл -->
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="./budget/budget.css" media="screen, print" rel="stylesheet" type="text/css">        <link rel="stylesheet" type="text/css" href="./budget/style.css">
+<link rel="stylesheet" type="text/css" href="./budget/bootstrap.min.css">
+<script type="text/javascript" src="./budget/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="./budget/budget.js"></script>
+<script type="text/javascript" src="./budget/checkbox.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function() {
+    $('#baby-cost .product input').checkBox();
+});
+var openedCategory = 1;
+bootstrap();
+//]]>
+</script>
+</head>
+<body>
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-xs-8">
+              <h2>Беременность</h2>
+              <!--Блок «9 месяцев»-->
+	               <div id="baby-cost">
+                   <!--Поликлиника-->
+                        <form method="post" action="">
+                            <div class="main-block">
+                                <ul class="product product_uncheck">
+                                  <li class="check">
+                                      <input class="input" value="1" name="checked" type="checkbox" data-default="0">
+                                  </li>
+                                    <li class="title">Государственная поликлиника</li>
+                                    <li class="calculate">
+                                        <ul class="pqm">
+                                            <li class="price">
+                                                <span class="input__cost"><span><input class="product-price" name="price" value="0" type="text" data-default="0"></span></span><span class="rouble">₽</span>
+                                            </li>
+                                            <li class="qnt">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                            </li>
+                                            <li class="months">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="price-item">
+                                        <span style="font-weight: bold;"><b>0</b> ₽</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                        <!--Прием гинеколога-->
+                        <form method="post" action="">
+                            <div class="main-block">
+                                <ul class="product product_uncheck">
+                                    <li class="check">
+                                        <input value="1" name="checked" type="checkbox" data-default="0">
+                                    </li>
+                                    <li class="title">Прием гинеколога</li>
+                                    <li class="calculate">
+                                        <ul class="pqm">
+                                            <li class="price">
+                                                <span class="input__cost"><span><input class="product-price" name="price" value="1200" type="text" data-default="1200"></span></span><span class="rouble">₽</span>
+                                            </li>
+                                            <li class="qnt">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                            </li>
+                                            <li class="months">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="months" value="9" type="text" data-default="9"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="price-item">
+                                        <span style="font-weight: bold;"><b>0</b> ₽</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                        <!--УЗИ-->
+                        <form method="post" action="">
+                            <div class="main-block">
+                                <ul class="product product_uncheck">
+                                    <li class="check">
+                                        <input class="input" value="1" name="checked" type="checkbox" data-default="0">
+                                    </li>
+                                    <li class="title">УЗИ</li>
+                                    <li class="calculate">
+                                        <ul class="pqm">
+                                            <li class="price">
+                                                <span class="input__cost"><span><input class="product-price" name="price" value="1500" type="text" data-default="1500"></span></span><span class="rouble">₽</span>
+                                            </li>
+                                            <li class="qnt">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                            </li>
+                                            <li class="months">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="months" value="3" type="text" data-default="3"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="price-item">
+                                        <span style="font-weight: bold;"><b>0</b> ₽</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                        <!--3D УЗИ-->
+                        <form method="post" action="">
+                            <div class="main-block">
+                                <ul class="product product_uncheck">
+                                    <li class="check">
+                                        <input value="1" name="checked" type="checkbox" data-default="0">
+                                    </li>
+                                    <li class="title">3D УЗИ</li>
+                                    <li class="calculate">
+                                        <ul class="pqm">
+                                            <li class="price">
+                                                <span class="input__cost"><span><input class="product-price" name="price" value="2500" type="text" data-default="2500"></span></span><span class="rouble">₽</span>
+                                            </li>
+                                            <li class="qnt">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                            </li>
+                                            <li class="months">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="months" value="3" type="text" data-default="3"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="price-item">
+                                        <span style="font-weight: bold;"><b>0</b> ₽</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                        <!--Контракт на ведение беременности-->
+                        <form method="post" action="">
+                            <div class="main-block">
+                                <ul class="product product_uncheck">
+                                    <li class="check">
+                                        <input value="1" name="checked" type="checkbox" data-default="0">
+                                    </li>
+                                    <li class="title">Контракт на ведение беременности</li>
+                                    <li class="calculate">
+                                        <ul class="pqm">
+                                            <li class="price">
+                                                <span class="input__cost"><span><input class="product-price" name="price" value="90000" type="text" data-default="90000"></span></span><span class="rouble">₽</span>
+                                            </li>
+                                            <li class="qnt">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                            </li>
+                                            <li class="months">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="price-item">
+                                        <span style="font-weight: bold;"><b>0</b> ₽</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                        <!--Витамины-->
+                             <form method="post" action="">
+                                 <div class="main-block">
+                                     <ul class="product product_uncheck">
+                                       <li class="check">
+                                           <input value="1" name="checked" type="checkbox" data-default="0">
+                                       </li>
+                                         <li class="title">Витамины</li>
+                                         <li class="calculate">
+                                             <ul class="pqm">
+                                                 <li class="price">
+                                                     <span class="input__cost"><span><input class="product-price" name="price" value="350" type="text" data-default="350"></span></span><span class="rouble">₽</span>
+                                                 </li>
+                                                 <li class="qnt">
+                                                     <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                                 </li>
+                                                 <li class="months">
+                                                     <span class="minus">—</span><span class="input__cost"><span><input name="months" value="9" type="text" data-default="9"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                                 </li>
+                                             </ul>
+                                         </li>
+                                         <li class="price-item">
+                                             <span style="font-weight: bold;"><b>0</b> ₽</span>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </form>
+                             <!--Одежда для беременных-->
+                             <form method="post" action="">
+                                 <div class="main-block">
+                                     <ul class="product product_uncheck">
+                                         <li class="check">
+                                             <input value="1" name="checked" type="checkbox" data-default="0">
+                                         </li>
+                                         <li class="title">Одежда для беременных</li>
+                                         <li class="calculate">
+                                             <ul class="pqm">
+                                                 <li class="price">
+                                                     <span class="input__cost"><span><input class="product-price" name="price" value="10000" type="text" data-default="10000"></span></span><span class="rouble">₽</span>
+                                                 </li>
+                                                 <li class="qnt">
+                                                     <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                                 </li>
+                                                 <li class="months">
+                                                     <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                                 </li>
+                                             </ul>
+                                         </li>
+                                         <li class="price-item">
+                                             <span style="font-weight: bold;"><b>0</b> ₽</span>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </form>
+                             <!--Бандаж-->
+                             <form method="post" action="">
+                                 <div class="main-block">
+                                     <ul class="product product_uncheck">
+                                         <li class="check">
+                                             <input value="1" name="checked" type="checkbox" data-default="0">
+                                         </li>
+                                         <li class="title">Бандаж</li>
+                                         <li class="calculate">
+                                             <ul class="pqm">
+                                                 <li class="price">
+                                                     <span class="input__cost"><span><input class="product-price" name="price" value="1200" type="text" data-default="1200"></span></span><span class="rouble">₽</span>
+                                                 </li>
+                                                 <li class="qnt">
+                                                     <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                                 </li>
+                                                 <li class="months">
+                                                     <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                                 </li>
+                                             </ul>
+                                         </li>
+                                         <li class="price-item">
+                                             <span style="font-weight: bold;"><b>0</b> ₽</span>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </form>
+                             <!--Курсы подготовки к родам-->
+                             <form method="post" action="">
+                                 <div class="main-block">
+                                     <ul class="product product_uncheck">
+                                         <li class="check">
+                                             <input value="1" name="checked" type="checkbox" data-default="0">
+                                         </li>
+                                         <li class="title">Курсы подготовки к родам</li>
+                                         <li class="calculate">
+                                             <ul class="pqm">
+                                                 <li class="price">
+                                                     <span class="input__cost"><span><input class="product-price" name="price" value="9000" type="text" data-default="9000"></span></span><span class="rouble">₽</span>
+                                                 </li>
+                                                 <li class="qnt">
+                                                     <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                                 </li>
+                                                 <li class="months">
+                                                     <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                                 </li>
+                                             </ul>
+                                         </li>
+                                         <li class="price-item">
+                                             <span style="font-weight: bold;"><b>0</b> ₽</span>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </form>
+                        <div class="total" style="margin-top: 30px;">
+                            <span class="main-total">
+                                <span>0</span> ₽
+                            </span>
+                        </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-xs-8">
+              <h2>Роды</h2>
+                 <div id="baby-cost">
+                   <!--Роды по родовому сертификату-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Роды по родовому сертификату</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="0" type="text" data-default="0"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                        <!--Контракт с дежурной бригадой-->
+                        <form method="post" action="">
+                            <div class="main-block">
+                                <ul class="product product_uncheck">
+                                    <li class="check">
+                                        <input value="1" name="checked" type="checkbox" data-default="0">
+                                    </li>
+                                    <li class="title">Контракт с дежурной бригадой</li>
+                                    <li class="calculate">
+                                        <ul class="pqm">
+                                            <li class="price">
+                                                <span class="input__cost"><span><input class="product-price" name="price" value="70000" type="text" data-default="70000"></span></span><span class="rouble">₽</span>
+                                            </li>
+                                            <li class="qnt">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                            </li>
+                                            <li class="months">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="price-item">
+                                        <span style="font-weight: bold;"><b>0</b> ₽</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                        <!--Контракт «все включено»-->
+                        <form method="post" action="">
+                            <div class="main-block">
+                                <ul class="product product_uncheck">
+                                    <li class="check">
+                                        <input value="1" name="checked" type="checkbox" data-default="0">
+                                    </li>
+                                    <li class="title">Контракт «всё включено»</li>
+                                    <li class="calculate">
+                                        <ul class="pqm">
+                                            <li class="price">
+                                                <span class="input__cost"><span><input class="product-price" name="price" value="90000" type="text" data-default="90000"></span></span><span class="rouble">₽</span>
+                                            </li>
+                                            <li class="qnt">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                            </li>
+                                            <li class="months">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="price-item">
+                                        <span style="font-weight: bold;"><b>0</b> ₽</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                        <!--Вещи в роддом-->
+                        <form method="post" action="">
+                            <div class="main-block">
+                                <ul class="product product_uncheck">
+                                    <li class="check">
+                                        <input value="1" name="checked" type="checkbox" data-default="0">
+                                    </li>
+                                    <li class="title">Вещи в&nbsp;роддом</li>
+                                    <li class="calculate">
+                                        <ul class="pqm">
+                                            <li class="price">
+                                                <span class="input__cost"><span><input class="product-price" name="price" value="2000" type="text" data-default="2000"></span></span><span class="rouble">₽</span>
+                                            </li>
+                                            <li class="qnt">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                            </li>
+                                            <li class="months">
+                                                <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="price-item">
+                                        <span style="font-weight: bold;"><b>0</b> ₽</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+
+                        <div class="total" style="margin-top: 30px;">
+                            <span class="main-total">
+                                <span>0</span> ₽
+                            </span>
+                        </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-xs-8">
+              <h2>Первый год жизни</h2>
+              <h3>Одежда</h3>
+                 <div id="baby-cost">
+                   <!--Одежда-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Одежда</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="5000" type="text" data-default="5000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="12" type="text" data-default="12"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+
+                        <div class="total" style="margin-top: 30px;">
+                            <span class="main-total">
+                                <span>0</span> ₽
+                            </span>
+                        </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-xs-8">
+              <h3>Гигиена и уход</h3>
+                 <div id="baby-cost">
+                   <!--Детская косметика-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Детская косметика</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="600" type="text" data-default="600"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="4" type="text" data-default="4"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Ножницы или щипчики-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Ножницы или щипчики</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="70" type="text" data-default="70"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Расческа-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Расческа</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="50" type="text" data-default="50"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Аспиратор-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Аспиратор</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="200" type="text" data-default="200"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="3" type="text" data-default="3"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Зубная щетка и паста-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Зубная щетка и паста</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="200" type="text" data-default="200"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="3" type="text" data-default="3"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Ванночка-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Ванночка</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="300" type="text" data-default="300"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Полотенце и мочалка-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Полотенце и мочалка</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="350" type="text" data-default="350"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="2" type="text" data-default="2"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Влажные салфетки-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Влажные салфетки</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="70" type="text" data-default="70"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="2" type="text" data-default="2"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="12" type="text" data-default="12"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Одноразовые подгузники-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Одноразовые подгузники</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="800" type="text" data-default="800"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="3" type="text" data-default="3"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="12" type="text" data-default="12"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Многоразовые подгузники-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Многоразовые подгузники</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="500" type="text" data-default="500"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="2" type="text" data-default="2"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="3" type="text" data-default="3"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Вкладыши в многоразовые подгузники-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Вкладыши в многораз. подгузники, 4 шт.</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="300" type="text" data-default="300"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="2" type="text" data-default="2"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="4" type="text" data-default="4"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Одноразовые пеленки-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Одноразовые пеленки, 5&nbsp;шт.</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="80" type="text" data-default="80"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="8" type="text" data-default="8"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="6" type="text" data-default="6"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Детский порошок-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Детский порошок, 2,4&nbsp;кг</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="250" type="text" data-default="250"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="2" type="text" data-default="2"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="12" type="text" data-default="12"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Утилизатор для подгузников-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Утилизатор для&nbsp;подгузников</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="2500" type="text" data-default="2500"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                        <div class="total" style="margin-top: 30px;">
+                            <span class="main-total">
+                                <span>0</span> ₽
+                            </span>
+                        </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-xs-8">
+              <h3>Детская комната</h3>
+                 <div id="baby-cost">
+                   <!--Кроватка-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Кроватка</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="6000" type="text" data-default="6000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Постельное белье-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Постельное белье</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="600" type="text" data-default="600"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="2" type="text" data-default="2"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Защитные бортики-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Защитные бортики</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="900" type="text" data-default="900"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Матрас-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Матрас</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="3000" type="text" data-default="3000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Подушка, одеяло, наматрасник-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Подушка, одеяло, наматрасник</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="2000" type="text" data-default="2000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Комод для пеленания-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Комод для пеленания</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="3000" type="text" data-default="3000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Увлажнитель воздуха-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Увлажнитель воздуха</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="1200" type="text" data-default="1200"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Радионяня-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Радионяня</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="2000" type="text" data-default="2000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Видеоняня-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Видеоняня</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="4000" type="text" data-default="4000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Безопасность-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Безопасность<br><em>защита на&nbsp;розетки, уголы, блокаторы окон, дверей</em></li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="1100" type="text" data-default="1100"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="3" type="text" data-default="3"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Шезлонг-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Шезлонг</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="1700" type="text" data-default="1700"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+
+                        <div class="total" style="margin-top: 30px;">
+                            <span class="main-total">
+                                <span>0</span> ₽
+                            </span>
+                        </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-xs-8">
+              <h3>Транспорт</h3>
+                 <div id="baby-cost">
+                   <!--Коляска-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Коляска</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="15000" type="text" data-default="15000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Слинг-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Слинг</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="1500" type="text" data-default="1500"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Сумка-переноска-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Сумка-переноска</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="1000" type="text" data-default="1000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Автокресло-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Автокресло</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="7000" type="text" data-default="7000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+
+                        <div class="total" style="margin-top: 30px;">
+                            <span class="main-total">
+                                <span>0</span> ₽
+                            </span>
+                        </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-xs-8">
+              <h3>Питание и посуда</h3>
+                 <div id="baby-cost">
+                   <!--Молокоотсос-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Молокоотсос</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="3000" type="text" data-default="3000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Молочная смесь-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Молочная смесь</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="500" type="text" data-default="500"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="4" type="text" data-default="4"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="12" type="text" data-default="12"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Бутылочка для кормления-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Бутылочка для кормления</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="450" type="text" data-default="450"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="2" type="text" data-default="2"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Овощное пюре-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Овощное пюре</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="25" type="text" data-default="25"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="20" type="text" data-default="20"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="8" type="text" data-default="8"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Фруктовое пюре-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Фруктовое пюре</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="20" type="text" data-default="20"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="20" type="text" data-default="20"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="8" type="text" data-default="8"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Мясо, рыба-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Мясо, рыба</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="70" type="text" data-default="70"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="20" type="text" data-default="20"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="6" type="text" data-default="6"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Сок-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Сок</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="20" type="text" data-default="20"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="15" type="text" data-default="15"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="7" type="text" data-default="7"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Каша-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Каша</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="17" type="text" data-default="17"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="30" type="text" data-default="30"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="6" type="text" data-default="6"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Кефир-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Кефир</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="26" type="text" data-default="26"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="20" type="text" data-default="20"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="6" type="text" data-default="6"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Творог-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Творог</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="18" type="text" data-default="18"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="30" type="text" data-default="30"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="6" type="text" data-default="6"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Блендер-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Блендер</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="700" type="text" data-default="700"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Стерилизатор-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Стерилизатор</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="1200" type="text" data-default="1200"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Детская посуда-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Детская посуда</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="300" type="text" data-default="300"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Средство для мытья посуды-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Средство для мытья посуды</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="70" type="text" data-default="70"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="2" type="text" data-default="2"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Стульчик для кормления-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Стульчик для кормления</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="3000" type="text" data-default="3000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                        <div class="total" style="margin-top: 30px;">
+                            <span class="main-total">
+                                <span>0</span> ₽
+                            </span>
+                        </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-xs-8">
+              <h3>Медицина</h3>
+                 <div id="baby-cost">
+                   <!--Детская поликлиника-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Детская поликлиника</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="0" type="text" data-default="0"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Полис ДМС-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Полис ДМС</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="50000" type="text" data-default="50000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Контракт на год-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Контракт на год</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="250000" type="text" data-default="250000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+
+                        <div class="total" style="margin-top: 30px;">
+                            <span class="main-total">
+                                <span>0</span> ₽
+                            </span>
+                        </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-xs-8">
+              <h3>Няня</h3>
+                 <div id="baby-cost">
+                   <!--Няня-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Няня</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="250" type="text" data-default="250"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="40" type="text" data-default="40"></span></span><span class="plus">+</span><span class="units">час.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="6" type="text" data-default="6"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                   <!--Гувернантка-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Гувернантка</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="60000" type="text" data-default="60000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">шт.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="11" type="text" data-default="11"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                        <div class="total" style="margin-top: 30px;">
+                            <span class="main-total">
+                                <span>0</span> ₽
+                            </span>
+                        </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-xs-8">
+              <h3>Игрушки</h3>
+                 <div id="baby-cost">
+                   <!--Игрушки-->
+                   <form method="post" action="">
+                       <div class="main-block">
+                           <ul class="product product_uncheck">
+                               <li class="check">
+                                   <input value="1" name="checked" type="checkbox" data-default="0">
+                               </li>
+                               <li class="title">Игрушки</li>
+                               <li class="calculate">
+                                   <ul class="pqm">
+                                       <li class="price">
+                                           <span class="input__cost"><span><input class="product-price" name="price" value="10000" type="text" data-default="10000"></span></span><span class="rouble">₽</span>
+                                       </li>
+                                       <li class="qnt">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="quantity" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="units">час.</span>
+                                       </li>
+                                       <li class="months">
+                                           <span class="minus">—</span><span class="input__cost"><span><input name="months" value="1" type="text" data-default="1"></span></span><span class="plus">+</span><span class="mon">мес.</span>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li class="price-item">
+                                   <span style="font-weight: bold;"><b>0</b> ₽</span>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+
+                        <div class="total" style="margin-top: 30px;">
+                            <span class="main-total">
+                                <span>0</span> ₽
+                            </span>
+                        </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
