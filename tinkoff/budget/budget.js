@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 
      $('ul').click(function() {
 
-        if($(this).next('div.main_block').toggle().is(':visible')) {
+        if($(this).next('div.main-block').toggle().is(':visible')) {
 
             $(this).find('i').
                 removeClass('plus_hidden').addClass('minus_hidden');
@@ -44,7 +44,7 @@ function recalculate() {
     var total = 0;
     var subtotal = [];
 
-    $('#baby-cost div.main_block').each(function() {
+    $('#baby-cost div.main-block').each(function() {
         var totalcategory = 0;
 
         $(this).find('ul.product:not(.product_uncheck)').each(function() {
