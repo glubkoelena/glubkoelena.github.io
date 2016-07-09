@@ -1,10 +1,10 @@
 jQuery(document).ready(function($){
 
-     $('ul.table_title').click(function() {
+     $('ul').click(function() {
 
         if($(this).next('div.main_block').toggle().is(':visible')) {
 
-            $(this).find('li.button_closer i').
+            $(this).find('i').
                 removeClass('plus_hidden').addClass('minus_hidden');
         }
         else {
@@ -44,8 +44,8 @@ function recalculate() {
     var total = 0;
     var subtotal = [];
 
-    $('#budget div.main_block').each(function() {
-        var totalCategory = 0;
+    $('#baby-cost div.main_block').each(function() {
+        var totalcategory = 0;
 
         $(this).find('ul.product:not(.product_uncheck)').each(function() {
             var price = parseFloat($(this).find('li.price input').val());
@@ -54,34 +54,34 @@ function recalculate() {
             var months = parseInt($(this).find('li.months input').val());
             if (!months) months = 1;
             if (!quantity) quantity = 1;
-            var productPrice = price * quantity * months;
-            $(this).find('li.price-item span b').html(productPrice.format(2));
-            totalCategory += productPrice;
+            var productcost = price * quantity * months;
+            $(this).find('li.price-item span b').html(productcost.format(2));
+            totalcategory += productcost;
         });
-        $(this).prev('ul.table_title').find('li.year span').html(totalCategory.format(2));
-        var parentCategory = $(this).prevAll('div.sub-total:first');
-        if (parentCategory.length) {
-            var parentCategoryId = parentCategory.find('span.sub-cost span').attr('id');
-            if (!(parentCategoryId in subtotal)) {
-                subtotal[parentCategoryId] = 0;
+        $(this).prev('ul').find('li').html(totalcategory.format(2));
+        var category = $(this).prevAll('div');
+        if (category.length) {
+            var idcategory = category.find('span').attr('id');
+            if (!(idcategory in subtotal)) {
+                subtotal[idcategory] = 0;
             }
-            subtotal[parentCategoryId] += totalCategory;
+            subtotal[idcategory] += totalcategory;
         }
-        total += totalCategory;
+        total += totalcategory;
     });
     if (subtotal) {
         for (var id in subtotal)
             $('#' + id).html(subtotal[id].format(2));
     }
-    $('#budget div.total span.main-total span').html(total.format(2));
+    $('#baby-cost div.total span.main-total span').html(total.format(2));
 }
 
 
 function reset() {
     window.resetRunnningFlag = true;
     $('li.check input').each(function() {
-        var isChecked = $(this).data('default');
-        if (isChecked)
+        var itemchecked = $(this).data('default');
+        if (itemchecked)
             $(this).attr('checked', 'checked');
         else
             $(this).removeAttr('checked');
@@ -174,14 +174,7 @@ function setHandlers() {
 
 
 
-    $('#budget-reset-button').click(function() {
-        if (window.confirm('Начать заново?')) {
-            reset();
-            recalculate();
-        }
 
-        return false;
-    });
 }
 
 
