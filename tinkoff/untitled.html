@@ -145,7 +145,7 @@ g.call(xAxis).append("text")
     .text("'Свободные' женщины минус мужчины, человек");
 
 queue()
-    .defer(d3.json, "ru-topo.json")
+    .defer(d3.json, "https://github.com/KoGor/Maps.GeoInfo/blob/master/russia_1e-7sr.json")
     .defer(d3.csv, "free.csv")
     .await(ready);
 
