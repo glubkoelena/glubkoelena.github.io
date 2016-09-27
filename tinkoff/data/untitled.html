@@ -77,7 +77,6 @@ text {
       <p><span id="regions"> </span></p>
       <p><span id="value">100</span></p>
     </div>
-<script src="./data/jquery.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v0.min.js"></script>
 <script src="http://d3js.org/queue.v1.min.js"></script>
@@ -145,7 +144,7 @@ g.call(xAxis).append("text")
     .text("'Свободные' женщины минус мужчины, человек");
 
 queue()
-    .defer(d3.json, "https://github.com/KoGor/Maps.GeoInfo/blob/master/russia_1e-7sr.json")
+    .defer(d3.json, "ru.json")
     .defer(d3.csv, "free.csv")
     .await(ready);
 
