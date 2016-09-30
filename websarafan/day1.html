@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8"><script type="text/javascript" src="https://bam.nr-data.net/1/bdb8d79cff?a=21263735&amp;v=974.7d740e1&amp;to=YwEHNkFZXRdVVBENXFpLJAFHUVwKG1QQF0dbCUgBXFZHAVpDSBdSWQkMFg%3D%3D&amp;rst=6114&amp;ref=https://websarafan.ru/content-sammit-day-2/&amp;ap=380&amp;be=1265&amp;fe=4207&amp;dc=2769&amp;perf=%7B%22timing%22:%7B%22of%22:1474662143491,%22n%22:0,%22f%22:0,%22dn%22:121,%22dne%22:122,%22c%22:123,%22s%22:127,%22ce%22:290,%22rq%22:291,%22rp%22:988,%22rpe%22:1022,%22dl%22:1084,%22di%22:4026,%22ds%22:4026,%22de%22:4148,%22dc%22:5472,%22l%22:5472,%22le%22:5539%7D,%22navigation%22:%7B%22ty%22:1%7D%7D&amp;at=T0YEQAlDThk%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-974.min.js"></script><script type="text/javascript" async="" defer="" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/goal.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+    <meta name="fragment" content="!">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">-->
+    <title>Websarafan | Первый день контент-саммита 2016 - Websarafan</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    
+<!-- This site is optimized with the Yoast SEO plugin v3.3.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://websarafan.ru/content-sammit-day-2/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Второй день контент-саммита 2016 - Websarafan">
+<meta property="og:url" content="https://websarafan.ru/content-sammit-day-2/">
+<meta property="og:site_name" content="Websarafan">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Второй день контент-саммита 2016 - Websarafan">
+<!-- / Yoast SEO plugin. -->
+
+        <script type="text/javascript">
+            window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/websarafan.ru\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.5"}};
+            !function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+        </script><style type="text/css"></style>
+        <style type="text/css">
+img.wp-smiley,
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="woocommerce-layout-css" href="//websarafan.ru/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=2.4.12" type="text/css" media="all">
+<link rel="stylesheet" id="woocommerce-smallscreen-css" href="//websarafan.ru/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=2.4.12" type="text/css" media="only screen and (max-width: 768px)">
+<link rel="stylesheet" id="woocommerce-general-css" href="//websarafan.ru/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=2.4.12" type="text/css" media="all">
+<link rel="stylesheet" id="yoast-seo-adminbar-css" href="https://websarafan.ru/wp-content/plugins/wordpress-seo/css/adminbar-330.min.css?ver=3.3.2" type="text/css" media="all">
+<script type="text/javascript" src="https://websarafan.ru/wp-includes/js/jquery/jquery.js?ver=1.11.3"></script>
+<script type="text/javascript" src="https://websarafan.ru/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+<link rel="https://api.w.org/" href="https://websarafan.ru/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://websarafan.ru/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://websarafan.ru/wp-includes/wlwmanifest.xml"> 
+<link rel="shortlink" href="https://websarafan.ru/?p=7822">
+<link rel="alternate" type="application/json+oembed" href="https://websarafan.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwebsarafan.ru%2Fcontent-sammit-day-2%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://websarafan.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwebsarafan.ru%2Fcontent-sammit-day-2%2F&amp;format=xml">
+<script src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/ilya-birman-likely-2.1.3/likely.js"></script>
+
+<link rel="stylesheet" href="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/ilya-birman-likely-2.1.3/likely.css">
+<script type="text/javascript">
+    var $mcGoal = {'settings':{'uuid':'743cc910035c91b1f69c0884b','dc':'us9'}};
+    (function() {
+         var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+        sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+    })(); 
+</script><!-- Stream WordPress user activity plugin v3.0.6 -->
+    <link href="https://websarafan.ru/wp-content/themes/sarafan%202/custom/content/assets/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+                        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <style>
+@font-face {
+  font-family: "MSC-500";
+  src: url("https://websarafan.ru/wp-content/themes/sarafan%202/custom/content/assets/MuseoSansCyrl-500.eot");
+  src: url("https://websarafan.ru/wp-content/themes/sarafan%202/custom/content/assets/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("https://websarafan.ru/wp-content/themes/sarafan%202/custom/content/assets/MuseoSansCyrl-500.woff") format("woff"), url("https://websarafan.ru/wp-content/themes/sarafan%202/custom/content/assets/MuseoSansCyrl-500.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "MuseoSansCyrl-900"; */
+@font-face {
+  font-family: "MSC-900";
+  src: url("https://websarafan.ru/wp-content/themes/sarafan%202/custom/content/assets/MuseoSansCyrl-900.eot");
+  src: url("https://websarafan.ru/wp-content/themes/sarafan%202/custom/content/assets/MuseoSansCyrl-900.eot?#iefix") format("embedded-opentype"), url("https://websarafan.ru/wp-content/themes/sarafan%202/custom/content/assets/MuseoSansCyrl-900.woff") format("woff"), url("https://websarafan.ru/wp-content/themes/sarafan%202/custom/content/assets/MuseoSansCyrl-900.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+html {margin-top: 0 !important;}
+body{font-family: "MSC-500", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+font-size: 16px;
+line-height: 1.4; color:black; -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;}
+ul{list-style: none; padding-left: 0px;}
+li{margin-bottom: 12px; line-height: 1.428; max-width:650px;}
+img{max-width:100%;}
+.caption{font-size: 80%; color:grey;}
+.factoids span{display:block; font-weight:bold;}
+.container{margin-bottom: 60px;}
+h2, h3{margin-top: 0; font-family: "MSC-900"}
+.promo{background-color:#ffe9d2;
+border-radius: 10px;
+padding:20px 20px 30px 20px !important;
+font-size: 14px; line-height: 1.428;}
+.smalled{font-size: 80%;}
+.vynoska{display:block; width:100px; height:60px; margin-top:-20px; margin-bottom: 10px; margin-left:10px; margin-right: -10px;}
+.birka{position:absolute; color:white; bottom:20px; left:40px; display:inline-block; background-color:rgba(0,0,0,0.7) ; padding:4px 10px 4px 10px; border-radius: 7px; font-size: 80%;}
+
+.birka-author{display:inline-block; border:1px solid rgba(0,0,0,0.7) ; padding:4px 10px 4px 10px; border-radius: 7px; font-size: 80%;}
+
+.content-unit .row {margin-bottom: 15px;}
+.content-unit h2 {font-size: 45px; font-weight: 900; margin-bottom: 5px; margin-top:20px;}
+.content-unit h3 {font-size: 25px; font-weight: 900; margin-bottom: 20px; margin-top:25px;}
+.stats{font-size: 80%;}
+.lead {font-weight: 400;}
+.highlight{background-color: #fffb9f;}
+.questions li{display:inline-block; width:30%; min-width:200px; vertical-align: top; margin-bottom: 20px; padding-right:20px; font-size: 80%;}
+.perebivka{margin-bottom: 90px;}
+.white{font-size: 100%; color:white; border:1px solid rgba(255,255,255,0.7);}
+
+.paymethod{margin-bottom:20px; margin-left:10px;}
+
+
+
+@media(max-width:767px){
+body{font-size: 14px;
+line-height: 1.3;}
+.factoids span{font-size: 25px; line-height: 35px;}
+.content-unit .row {margin-bottom: 8px;}
+.container{margin-bottom: 30px;}
+.birka{display:none;}
+.content-unit h2 {font-size: 30px; margin-top:8px;}
+.questions li{width:100%; min-width:200px; vertical-align: top; margin-bottom: 10px; padding-right:20px; font-size: 100%;}
+}
+@media(min-width:768px){
+body{font-size: 15px;
+line-height: 1.4;}
+.content-unit .row {margin-bottom: 10px;}
+.factoids span{font-size: 30px; line-height: 35px;}
+.vynoska{display:none;}
+}
+@media(min-width:992px){.vynoska{display:block; height:30px;}}
+
+
+@media(min-width:1200px){.factoids span{font-size: 40px; line-height: 45px;}
+.vynoska{display:block; height:60px;}
+body{font-size: 16px;
+line-height: 1.4;}
+
+}
+                        </style>
+<style>.pkt_added {text-decoration:none !important;}</style></head>
+    <body data-pinterest-extension-installed="cr1.39.2">
+        <div style="background-image:url(&#39;https://websarafan.ru/wp-content/themes/sarafan%202/custom/content/assets/bg.jpg&#39;); background-size:100%; padding-top:50px; padding-bottom:30px; margin-bottom:80px;">
+            <div class="container content-unit" style="margin-bottom:0px;">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7">
+                        <div class="birka-author white">
+                            Видеозаписи интернет-конференции
+                        </div>
+                        <h2 class="hidden-xs" style="color:white;">
+                            Контент-маркетинг для предпринимателей
+                        </h2>
+                        <h3 class="hidden-sm hidden-md hidden-lg" style="color:white;">
+                            Контент-маркетинг для предпринимателей
+                        </h3>
+                        <p class="lead" style="color:white; margin-top:30px">
+                            День&nbsp;1. Как привлечь клиентов с&nbsp;помощью контент-маркетинга, разработать стратегию, составить план публикаций и&nbsp;рассчитать бюджет
+                        </p>
+                        
+                    </div>
+                    <div class="col-xs-12 col-lg-offset-1 col-lg-2 col-md-2 col-sm-3">
+                        <div class="hidden-xs hidden-sm" style="background-image:url(&#39;./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/ehlyzova.png&#39;); background-size:100%; width:150px; height:150px; border-radius:100px; margin-bottom:15px;">
+                        </div>
+                        <div class="hidden-xs hidden-lg hidden-md" style="background-image:url(&#39;./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/ehlyzova.png&#39;); background-size:100%; width:100px; height:100px; border-radius:100px; margin-bottom:15px;">
+                        </div>
+                        <p style="color:white;">
+                            <b>
+                                Евгения Хлызова
+                            </b>
+                            <br>
+                            руководитель MailSeller
+                        </p>
+                    </div>
+                   <div class="col-xs-12 col-lg-2 col-md-2 col-sm-3">
+                        <div class="hidden-xs hidden-sm" style="background-image:url(&#39;./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/kateroshina.jpg&#39;); background-size:100%; width:150px; height:150px; border-radius:100px; margin-bottom:15px;">
+                        </div>
+                        <div class="hidden-xs hidden-lg hidden-md" style="background-image:url(&#39;./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/kateroshina.jpg&#39;); background-size:100%; width:100px; height:100px; border-radius:100px; margin-bottom:15px;">
+                        </div>
+                        <p style="color:white;">
+                            <b>
+                                Катерина Ерошина
+                            </b>
+                            <br>
+                            редактор madcats.ru
+                        </p>
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="hidden-xs hidden-sm likely likely-light likely-big" style="margin-top: 24px; margin-left: 10px;">
+  <div class="facebook">Поделиться</div>
+  <div class="vkontakte">Поделиться</div>
+   <div class="twitter">Твитнуть</div>
+  </div>
+
+                    <div class="col-xs-12 col-sm-12 hidden-md hidden-lg likely likely-light" style="margin-top: 24px;">
+  <div class="facebook">Поделиться</div>
+  <div class="vkontakte">Поделиться</div>
+   <div class="twitter">Твитнуть</div>
+  </div>
+</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+                    <p>
+                        <b>
+                            Что:
+                        </b>
+                        видеозапись первого дня саммита «Контент-маркетинг для предпринимателей». Саммит прошел в&nbsp;мае 2016 года в&nbsp;Санкт-Петербурге и&nbsp;собрал 10&nbsp;тысяч участников.
+                    </p>
+                    <p>
+                        <b>
+                            Для кого:
+                        </b>
+                        для предпринимателей, которые уже занимаются контент-маркетингом или только исследуют возможности для его внедрения.
+                    </p>
+                    <p>
+                        <b>
+                            Зачем
+                        </b>
+                    </p>
+                    <ol>
+                        <li>
+                            Создавать материалы, которые заинтересуют целевую аудиторию. 
+                        </li>
+                        <li>
+                            Использовать для привлечения клиентов разные каналы: соцсети, рассылки, блоги, вебинары.
+                        </li>
+                        <li>
+                            Понять, на&nbsp;какие темы писать и&nbsp;как правильно составлять план публикаций.
+                        </li>
+                        <li>
+                            Рассчитать бюджет контент-маркетинга.
+                        </li>
+                        
+            
+                    </ol>
+                    <p style="margin-bottom:20px;">
+                        <b>
+                            Размер бизнеса и&nbsp;отрасль: 
+                        </b>
+                        любые.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-md-4 col-lg-4 promo content-unit">
+                    <h3 style="margin-top:0px;">
+                        Получить доступ
+                    </h3>
+                    <p class="lead" style="margin-bottom:10px;">
+                        4&nbsp;часа видеолекций
+                    </p>
+                    <p class="lead" style="margin-bottom:10px;">
+                        Аудиоверсия
+                    </p>
+                    <p class="lead" style="margin-bottom:10px;">
+                        Презентации
+                    </p>
+                    <p class="lead" style="margin-bottom:20px;">
+                        Дополнительные материалы в&nbsp;рассылке
+                    </p>
+                    <p style="margin-bottom:20px;">
+                        <a class="btn btn-primary btn-lg" href="https://websarafan.ru/?add-to-cart=6122">Купить первый день за&nbsp;5000&nbsp;₽</a>
+                    </p>
+                    <div>
+                        <a class="btn btn-primary btn-lg" href="https://websarafan.ru/?add-to-cart=5101">Купить полный курс за&nbsp;7500&nbsp;₽</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                <div class="container content-unit">
+            <div class="row">
+                <div class="hidden-xs col-sm-3">
+                    <p>
+                        <img class="hidden-xs" src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/ehlyzova.png">
+                    </p>
+                    <p class="caption hidden-xs">
+                        Евгения&nbsp;— автор курсов по&nbsp;маркетингу, основатель студии продающего email-маркетинга «MailSeller».
+                    </p>
+                    
+                </div>
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                    <img class="hidden-sm hidden-md hidden-lg" src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/ehlyzova.png">
+                        <div class="hidden-xs birka-author" style="margin-top:0px;">
+                            Докладчик
+                        </div>
+                        <h2 style="margin-top:0px;">
+                            Евгения Хлызова
+                        </h2>
+                        <p>
+                            Евгения — специалист по построению воронок продаж, маркетолог, аналитик, руководитель студии продающего email-маркетинга «MailSeller». </p>
+
+                            <p>Евгения помогает предпринимателям создавать электронные рассылки, которые привлекают новых клиентов, формируют репутацию и продают.</p>
+
+                        <p> В&nbsp;этом выступлении Евгения расскажет, что такое контент-маркетинг, кому он&nbsp;нужен и&nbsp;как правильно его использовать. </p>
+
+                    </div>
+                
+                    
+                
+                <div class="col-xs-12 col-lg-7 col-md-8 col-sm-10" style="margin-top: 27px;">
+
+<p class="lead">«Когда у&nbsp;нас возникает вопрос или проблема, мы&nbsp;не&nbsp;идет за&nbsp;советом к&nbsp;друзьям и&nbsp;не&nbsp;роемся в&nbsp;справочниках. Мы&nbsp;заходим в&nbsp;Яндекс или Гугл и&nbsp;ищем ответы там. А&nbsp;если хотим отвлечься от&nbsp;работы, идем в&nbsp;соцсети. </p>
+<p class="lead">Мы&nbsp;каждый день потребляем контент: читаем статьи, просматриваем видеоролики, слушаем подкасты. А&nbsp;<span class="highlight">предприниматели с&nbsp;помощью интересного и&nbsp;полезного контента привлекают наше внимание. То&nbsp;есть занимаются контент-маркетингом</span>.
+    </p>
+<p class="lead">На&nbsp;своем выступлении я&nbsp;помогу разобраться, как правильно использовать контент-маркетинг, чтобы получить результат и&nbsp;не&nbsp;потратить кучу денег впустую»
+</p>
+
+                </div>
+                </div>
+            </div>
+            
+            
+        
+        <div class="container content-unit">
+            <div class="row">
+                <div class="hidden-xs col-sm-3">
+                    <p>
+                        <img class="hidden-xs" src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/kateroshina.jpg">
+                    </p>
+                    <p class="caption hidden-xs">
+                        Катерина&nbsp;— коммерческий писатель, консультант по&nbsp;контент-маркетингу, редактор madcats.ru
+                    </p>
+                    
+                </div>
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                    <img class="hidden-sm hidden-md hidden-lg" src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/kateroshina.jpg">
+                        <div class="hidden-xs birka-author" style="margin-top:0px;">
+                            Докладчик
+                        </div>
+                        <h2 style="margin-top:0px;">
+                            Катерина Ерошина
+                        </h2>
+                        <p>
+                            Катерина Ерошина&nbsp;&mdash; коммерческий писатель, пишет тексты с&nbsp;2012.  </p>
+
+                            <p>Преподаёт в&nbsp;центре онлайн-образования &laquo;Нетология&raquo; (Москва) и&nbsp;Академии Webcom (Минск). Выступает на&nbsp;конференциях, посвященных контент-маркетингу. На&nbsp;конференции Яндекса провела лекцию о&nbsp;том, как написать качественный текст.</p>
+
+                        <p>Катерина работает редактором в&nbsp;madcats.ru&nbsp;&mdash; издании о&nbsp;контент-маркетинге. Она пишет статьи и&nbsp;помогает некоторым своим клиентам спланировать наполнение сайта. Противник бессмысленных seo-текстов.</p>
+
+                    </div>
+                
+                    
+                
+                <div class="col-xs-12 col-lg-7 col-md-8 col-sm-10" style="margin-top: 27px;">
+
+<p class="lead">«За&nbsp;пять месяцев на&nbsp;сайте «Безумных котиков» мы&nbsp;выпустили 150 статей&nbsp;&mdash; писали по&nbsp;статье в&nbsp;день. Без плана публикаций этого&nbsp;бы не&nbsp;получилось. Я&nbsp;покажу, каким контент-планом мы&nbsp;пользуемся и&nbsp;научу составлять таблицу, которая поможет понять, о&nbsp;чем, для кого и&nbsp;что писать.</p>
+<p class="lead">После того, как составим план публикаций, мы&nbsp;рассчитаем затраты на&nbsp;выпуск восьми статей. Не думайте, что платить придется только автору. Статью нужно оформить, сверстать, выложить в&nbsp;сеть и&nbsp;расшарить в&nbsp;соцсетях. Мы&nbsp;сделаем два расчета: экономный, когда статьи пишет копирайтер с&nbsp;биржи, а&nbsp;все остальное делаем сами, и&nbsp;щедрый, когда на&nbsp;нас работает целая команда во&nbsp;главе с&nbsp;редактором. Только не&nbsp;думайте, что экономный вариант выйдет дешевле. <span class="highlight">Когда вы экономите и&nbsp;делаете все сами, то&nbsp;расплачиваетесь за&nbsp;это собственным временем</span>»</p>
+
+   
+
+                </div>
+                </div>
+            </div>
+            
+        
+        <div class="container promo content-unit">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 style="margin-top:0px;">
+                        Что внутри
+                    </h2>
+                </div>
+            </div>
+            <div class="row factoids hidden-xs">
+                <div class="col-xs-2 ">
+                    <p class="hidden-md hidden-sm">
+                       
+                    <p>
+                        <span>
+                            📹 4
+                        </span>
+                        <b>
+                            часа видео
+                        </b>
+                        <br>
+                        посмотреть все лекции и&nbsp;сессии ответов на&nbsp;вопросы
+                    </p>
+                    <p class="hidden-sm">
+                        <span>
+                            🎧 4
+                        </span>
+                        <b>
+                            часа аудио
+                        </b>
+                        <br>
+                        послушать всё за&nbsp;рулем или на&nbsp;пробежке
+                    </p>
+                </div>
+                <div class="col-xs-8">
+                    <img src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/promo__1.jpg">
+                </div>
+                <div class="col-xs-2">
+                    <p class="hidden-md">
+                         <span>
+                            🔍 4
+                        </span>
+                        <b>
+                            презентации
+                        </b>
+                        <br>
+                        с&nbsp;теорией и&nbsp;примерами
+                    </p>
+                    <p class="hidden-sm">
+                        <span>
+                            ❓ 41
+                        </span>
+                        ответ на&nbsp;вопросы предпринимателей
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="row hidden-xs smalled">
+                <div class="col-xs-2">
+                </div>
+                <div class="col-xs-2">
+                    <img class="vynoska hidden-sm" src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/diagonal1.png"style="margin-left: 30px;">
+                        <p>
+                            Как разработать контент-стратегию<br>
+                            <em>Евгения Хлызова</em>
+
+                        </p>
+                    
+                </div>
+                <div class="col-xs-2">
+                    <img class="vynoska hidden-sm" src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/vertical.png"style="margin-left: 30px;">
+                        <p>
+                            Как вовлечь нужную аудиторию&nbsp;и построить воронку продаж<br>
+                            <em>Евгения Хлызова</em>
+                        </p>
+                    
+                </div>
+                <div class="col-xs-2">
+                    <img class="vynoska hidden-sm" src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/vertical.png"style="margin-left: 20px;">
+                        <p>
+                            Как правильно составить контент-план<br>
+                            <em>Катерина Ерошина</em>
+                        </p>
+                    
+                </div>
+                <div class="col-xs-3">
+                    <img class="vynoska hidden-sm" src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/diagonal3.png" style="margin-left:-30px;">
+                        <p>
+                            Сколько стоит контент-маркетинг<br>
+                            <em>Катерина Ерошина</em>
+                        </p>
+                    
+                </div>
+            </div>
+            <div class="row factoids hidden-sm hidden-md hidden-lg">
+                <div class="col-xs-6 col-sm-2">
+                    <span>
+                        📹 4
+                    </span>
+                    <b>
+                        часа видео
+                    </b>
+                    <br>
+                    посмотреть все лекции и&nbsp;ответы на&nbsp;вопросы
+                </div>
+                
+                <div class="col-xs-6 col-sm-2">
+                    <span>
+                        🎧 4
+                    </span>
+                    <b>
+                        часа аудио
+                    </b>
+                    <br>
+                    послушать всё за&nbsp;рулем или на&nbsp;пробежке
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <span>
+                        🔍 4
+                    </span>
+                    <b>
+                        презентации
+                    </b>
+                    <br>
+                    с&nbsp;теорией и&nbsp;примерами
+                </div>
+                
+                <div class="col-xs-6 col-sm-2">
+                    <span>
+                        ❓41
+                    </span>
+                    ответ на&nbsp;вопросы от&nbsp;предпринимателей
+                </div>
+                
+            </div>
+        </div>
+        <div class="container content-unit">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10">
+                    <img src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/video__1_1.png">
+                        <div class="birka">
+                            Тема&nbsp;1: стратегия контент-маркетинга
+                        </div>
+                    
+                </div>
+                <div class="hidden-xs col-xs-12 col-sm-2 factoids stats">
+                    <p class="hidden-sm">
+                        Продолжительность
+                        <span>
+                            50&nbsp;мин
+                        </span>
+                    </p>
+                    <p>
+                        <b>
+                            Включает
+                        </b>
+                        <br>
+                        Видеозапись
+                        <br>
+                        Аудиозапись
+                        <br>
+                        Презентацию
+                        <br>
+                        Ответы на&nbsp;вопросы
+                    </p>
+                    <p class="hidden-md hidden-lg">
+                        Продолжительность: 50&nbsp;мин
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10">
+                    <h2>
+                        Как разработать контент-стратегию
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-8">
+                    <ul>
+                        <li>
+                            <b>
+                                Стратегия контент-маркетинга.
+                            </b>
+                            Как контент помогает продавать. Для чего нужен сценарий. Анализ аудитории. Как составить портрет потенциального клиента. Как понять, что контент работает. Чем контент отличается от&nbsp;рекламы и&nbsp;копирайтинга.
+                        </li>
+                        <li>
+                            <b>
+                                Привлечение внимания.
+                            </b>
+                            Как победить в&nbsp;борьбе за&nbsp;внимание. Каким должен быть заголовок. Почему продающие фразы не&nbsp;работают.
+                        </li>
+                        <li>
+                            <b>
+                                Формирование потребности.
+                            </b>
+                            Вопросы и&nbsp;желания клиента. Как работать с&nbsp;возражениями.
+                        </li>
+                        <li>
+                            <b>
+                                Продажа.
+                            </b>
+                            Как покупатель принимает решение, за&nbsp;что он платит на&nbsp;самом деле. Какие отзывы работают лучше всего.
+                        </li>
+                        <li>
+                            <b>
+                                Повторные продажи.
+                            </b>
+                            Жизненный цикл клиента. Что нужно, чтобы клиент пришел снова. Какой контент помогает удерживать клиента.
+                        </li>
+                    </ul>
+                    <h3>
+                        Вопросы предпринимателей
+                    </h3>
+                    <ul class="questions">
+                        <li>
+                            Как привлечь внимание &laquo;холодного&raquo; клиента?
+                        </li>
+                        <li>
+                            Должен&nbsp;ли контент вызывать только позитивную реакцию?
+                        </li>
+                        <li>
+                            Как быстро контент начнет продавать? 
+                        </li>
+                        <li>
+                            Как быть, если повторные покупки бывают редко?
+                        </li>
+                        <li>
+                            Может&nbsp;ли хорошая статья спасти плохой продукт?
+                        </li>
+                         <li>
+                            На&nbsp;какие вопросы читателей должен отвечать контент?
+                        </li>
+                    
+                    </ul>
+                </div>
+                <div class="hidden-xs col-sm-10 col-md-4">
+                    <p class="lead">
+                       «На&nbsp;пути к&nbsp;решению о&nbsp;покупке у&nbsp;клиента возникает множество вопросов. <span class="highlight">Задача вашего контента&nbsp;&mdash; ответить на&nbsp;все эти вопросы и&nbsp;снять возражения</span>. 
+                    </p>
+                    <p class="lead">
+                        Прежде чем писать текст, подумайте, кого вы&nbsp;хотите привлечь. Создайте портрет клиента: почувствуйте его боль, его проблемы, постарайтесь понять стиль его жизни и&nbsp;образ мышления. И&nbsp;только потом пишите»
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container content-unit">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10">
+                    <img src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/video__4_2.jpg">
+                        <div class="birka">
+                            Тема&nbsp;2: элементы контент-маркетинга
+                        </div>
+                    
+                </div>
+                <div class="hidden-xs col-xs-12 col-sm-2 factoids stats">
+                    <p class="hidden-sm">
+                        Продолжительность
+                        <span>
+                            60 мин
+                        </span>
+                    </p>
+                    <p>
+                        <b>
+                            Включает
+                        </b>
+                        <br>
+                        Видеозапись
+                        <br>
+                        Аудиозапись
+                        <br>
+                        Презентацию
+                        <br>
+                        Ответы на&nbsp;вопросы
+                    </p>
+                    <p class="hidden-md hidden-lg">
+                        Продолжительность: 60&nbsp;мин
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10">
+                    <h2>
+                        Как вовлечь нужную аудиторию и&nbsp;построить воронку продаж
+
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-8">
+                    <ul>
+                        <li>
+                            <b>
+                                Форматы.
+                            </b>
+                            Как собирать базу подписчиков: методички, полезная рассылка, вебинары, видеоуроки. Как выстроить систему продаж при&nbsp;помощи рассылки.
+                            Что такое магнит трафика, как он работает.
+                        </li>
+                        <li>
+                            <b>
+                                Каналы.
+                            </b>
+                            Основные каналы привлечения клиентов. Под какие поисковики выгоднее настраивать сайт. Как выяснить, что люди ищут в&nbsp;ютьюбе и&nbsp;создать видео под поисковый запрос.
+                        </li>
+                        <li>
+                            <b>
+                                Носители.
+                            </b>
+                            Лендинг, посты, письма, файлы. Структура продающей страницы.
+                        </li>
+                        <li>
+                            <b>
+                                Инструменты.
+                            </b>
+                            Три главных инструмента привлечения клиентов. Как вовлечь клиента и&nbsp;начать с&nbsp;ним взаимодействовать. Как расширить целевую аудиторию. Когда лучше использовать контекстную рекламу, а&nbsp;когда&nbsp;&mdash; таргетированную. Прямые и&nbsp;косвенные запросы.
+                        </li>
+                        <li>
+                            <b>
+                                Система.
+                            </b>
+                            Схемы воронок продаж для простых и&nbsp;сложных продуктов. Алгоритм создания контентной стратегии.
+                        </li>
+                    </ul>
+                    <h3>
+                        Вопросы предпринимателей
+                    </h3>
+                    <ul class="questions">
+                        <li>
+                            Нужна&nbsp;ли простым продуктам воронка продаж? Какие этапы можно исключить?
+                        </li>
+                        <li>
+                            Нужно&nbsp;ли удерживать клиента при одноразовых продажах?
+                        </li>
+                        <li>
+                            Как не&nbsp;слить рекламный бюджет?
+                        </li>
+                        <li>
+                            Как понять, сложный у&nbsp;меня продукт или простой?
+                        </li>
+                        <li>
+                            Что больше подходит для&nbsp;взаимодействия с&nbsp;клиентами в&nbsp;соцсетях: группа или страница?
+                        </li>
+                        <li>
+                            В&nbsp;каких случаях нужна рассылка, а&nbsp;когда без нее можно обойтись?
+                        </li>
+                        <li>
+                            Чем заинтересовать покупателей товаров сиюминутного спроса? Например, любителей пива.
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="hidden-xs col-sm-10 col-md-4">
+                    <p class="lead">
+                        «Главная задача соцсетей, блогов и&nbsp;вебинаров, рассылок&nbsp;&mdash; вовлечение. Клиенты к&nbsp;вам привыкают и&nbsp;становятся ближе. <p>
+                    <p class="lead"><span class="highlight">При помощи полезных материалов вы&nbsp;постепенно готовите их&nbsp;к&nbsp;покупке товара или услуги</span>»
+                    </p>  
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container content-unit">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10">
+                    <img src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/video__1_3.jpg">
+                        <div class="birka">
+                            Тема&nbsp;3: контент-план
+                        </div>
+                    
+                </div>
+                <div class="hidden-xs col-xs-12 col-sm-2 factoids stats">
+                    <p class="hidden-sm">
+                        Продолжительность
+                        <span>
+                            60 мин
+                        </span>
+                    </p>
+                    <p>
+                        <b>
+                            Включает
+                        </b>
+                        <br>
+                        Видеозапись
+                        <br>
+                        Аудиозапись
+                        <br>
+                        Презентацию
+                        <br>
+                        Ответы на&nbsp;вопросы
+                    </p>
+                    <p class="hidden-md hidden-lg">
+                        Продолжительность: 60&nbsp;мин
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10">
+                    <h2>
+                        Как правильно составить контент-план
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-8">
+                    <ul>
+                        <li>
+                            <b>
+                                Как не&nbsp;надо.
+                            </b>
+                            Список идей, готовый шаблон, календарный план, золотое правило 60/30/10&nbsp;&mdash; почему все это не&nbsp;работает. Как научиться регулярно публиковать материалы.
+                        </li>
+                        <li>
+                            <b>
+                                Система.
+                            </b>
+                            Структура контент-плана. Как привязать план к&nbsp;целям. Как с&nbsp;помощью плана управлять публикациями и&nbsp;отслеживать эффективность каналов. Программы для создания контент-плана.
+                        </li>
+                        <li>
+                            <b>
+                                Контент-матрица.
+                            </b>
+                            Как при помощи матрицы генерировать идеи новых статей. Как понять, о&nbsp;чем и&nbsp;для кого писать.
+                        </li>
+                        
+                    </ul>
+                    <h3>
+                        Вопросы предпринимателей
+                    </h3>
+                    <ul class="questions">
+                        <li>
+                            От&nbsp;чего зависит частота публикаций?
+                        </li>
+                        <li>
+                            Как часто нужно пересматривать план? 
+                        </li>
+                        <li>
+                            Нужно&nbsp;ли для каждого канала составлять отдельный план?
+                        </li>
+                        <li>
+                            Как составить контент-план для простого продукта? Например, для дрожжевого хлеба.
+                        </li>
+                        <li>
+                            Нужно&nbsp;ли включать в&nbsp;план развлекательный контент и&nbsp;демотиваторы?
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="hidden-xs col-sm-10 col-md-4">
+                    <p class="lead">
+                        «Вы&nbsp;уже написали на все хорошие темы. На&nbsp;следующий день вам нужно делать следующую статью, а&nbsp;вы&nbsp;не&nbsp;знаете, о&nbsp;чем написать. Именно для этих случаев нужен контент-план.</p>
+                    <p class="lead"> Когда вы&nbsp;пишете только про&nbsp;то, от&nbsp;чего вас прет&nbsp;&mdash; это хорошо. Но&nbsp;это хаос. Все это сильно зависит от&nbsp;вдохновения. <span class="highlight">Завтра вам эта тема надоест, и&nbsp;все закончится</span>.</p> 
+
+                <p class="lead">Поэтому сначала сосредоточьтесь на&nbsp;том, что вам нравится, а&nbsp;потом сделайте из&nbsp;этого контентный план»
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container content-unit">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10">
+                    <img src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/video__1_4.jpg">
+                        <div class="birka">
+                            Тема&nbsp;4: бюджет контент-маркетинга
+                        </div>
+                    
+                </div>
+                <div class="hidden-xs col-xs-12 col-sm-2 factoids stats">
+                    <p class="hidden-sm">
+                        Продолжительность
+                        <span>
+                            50 мин
+                        </span>
+                    </p>
+                    <p>
+                        <b>
+                            Включает
+                        </b>
+                        <br>
+                        Видеозапись
+                        <br>
+                        Аудиозапись
+                        <br>
+                        Презентацию
+                        <br>
+                        Ответы на&nbsp;вопросы
+                    </p>
+                    <p class="hidden-md hidden-lg">
+                        Продолжительность: 50&nbsp;мин
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-10">
+                    <h2>
+                        Сколько стоит контент-маркетинг
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-8">
+                    <ul>
+                        <li>
+                            <b>
+                                Посчитаем.
+                            </b>
+                            Что выгоднее&nbsp;&mdash; писать статьи силами сотрудников или нанять стороннего автора. Стоит&nbsp;ли искать автора на&nbsp;биржах копирайтеров. Если предприниматель решил писать сам. Сколько стоит автоматизация. За&nbsp;что берет деньги специалист.
+                        </li>
+                        <li>
+                            <b>
+                                Оплата.
+                            </b>
+                            За&nbsp;что платить: за&nbsp;объем, за&nbsp;количество статей или за&nbsp;часы работы. С&nbsp;какими проблемами сталкиваются заказчики и&nbsp;исполнители. Всегда&nbsp;ли профессионал стоит дорого. Чего ожидать от&nbsp;работы за&nbsp;100&nbsp;₽/1000&nbsp;знаков. Стоит&nbsp;ли поощрять хороших авторов.
+                        </li>
+                        <li>
+                            <b>
+                                Бюджет.
+                            </b>
+                            Как спланировать затраты. Стоит ли искать автора самому или обратиться в&nbsp;агентство. Во&nbsp;сколько обходится экономия. Статья&nbsp;&mdash; это не&nbsp;только текст: затраты на&nbsp;иллюстрации, верстку, распространение.
+                        </li>
+                    </ul>
+                    <h3>
+                        Вопросы предпринимателей
+                    </h3>
+                    <ul class="questions">
+                        <li>
+                            Где искать копирайтеров?
+                        </li>
+                        <li>
+                            Дадут&nbsp;ли скидку, если закажем много статей?
+                        </li>
+                        <li>
+                            Расскажите о&nbsp;профессиональном росте автора
+                        </li>
+                        <li>
+                            Стоит&nbsp;ли доверять копирайтеру писать о&nbsp;сложном продукте?
+                        </li>
+                        <li>
+                            Как оценить, насколько хорошо автор пишет продающие тексты?
+                        </li>
+                    
+                        <li>
+                            Как новичку без опыта начать писать статьи?
+                        </li>
+                        <li>
+                            Нужно&nbsp;ли готовить для копирайтера техническое задание, как оно выглядит?
+                        </li>
+                        <li>
+                            В&nbsp;чем разница между автором и&nbsp;копирайтером?
+                        </li>
+                        <li>
+                            Как защитить свои тексты от&nbsp;воровства?
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="hidden-xs col-sm-10 col-md-4">
+                    <p class="lead">
+                        «Почему выгодно хорошо платить копирайтеру? Потому что он&nbsp;на&nbsp;эти деньги живет. Если автору не&nbsp;хвататет на&nbsp;жизнь, он&nbsp;вынужден набирать много заказов&nbsp;и, не&nbsp;вникая глубоко в&nbsp;тему, штамповать как можно больше статей. При таком раскладе автор не&nbsp;сможет много времени посвятить вашей задаче. 
+                    </p>
+                    <p class="lead">
+                        Когда вы&nbsp;заказываете копирайтеру статью, <span class="highlight">вы&nbsp;платите не&nbsp;за&nbsp;знаки. Вы&nbsp;платите за&nbsp;ответственность и&nbsp;вовлеченность»
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container content-unit perebivka">
+            <div class="row">
+                <div class="col-xs-12" style="text-align:center">
+                    <img src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/compose_1.png" style="width:750px;">
+                        <h2>
+                            Смотреть и&nbsp;слушать
+                        </h2>
+                        <p class="lead">
+                            Материалы саммита можно смотреть на&nbsp;компьютере, смартфоне и&nbsp;планшете,
+                            <br>
+                            а&nbsp;также слушать фоном, за&nbsp;рулем, на&nbsp;прогулке или в&nbsp;спортзале.
+                            <br>
+                            В&nbsp;комплекте&nbsp;— доступ к&nbsp;видеозаписям и&nbsp;аудиодорожке
+                        </p>
+                        
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container content-unit promo">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 style="margin-top:0px;">
+                        Доступ к&nbsp;материалам первого дня саммита
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 сol-md-6 col-lg-6">
+                    <p class="lead">
+                        Доступ ко&nbsp;всем материалам первого дня саммита стоит 5000&nbsp;₽.
+                    </p>
+                    <p class="lead">
+                        В&nbsp;комплекте: видеозаписи, аудиозаписи, презентации, доступ к&nbsp;дополнительным материалам по&nbsp;эл. почте.
+                    </p>
+                    <p style="text-align:middle;">
+                        <a class="btn btn-primary btn-lg" href="https://websarafan.ru/?add-to-cart=6122" style="margin-bottom:20px;">
+                            Купить первый день за&nbsp;5000&nbsp;₽
+                        </a>
+                        <nobr>
+                            <img class="paymethod" src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/ac.png">
+                                <img class="paymethod" src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/pc.png">
+                                    <img class="paymethod" src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/qw.png">
+                                
+                            
+                        </nobr>
+                    </p>
+                    <p class="lead">
+                        Или получите доступ ко&nbsp;всем материалам саммита:
+                    </p>
+                    <p>
+                        <a href="https://websarafan.ru/courses/content/">
+                            <img src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/all4.png" style="margin-bottom:20px;">
+                        </a>
+                    </p>
+                    <a class="btn btn-primary btn-lg" href="https://websarafan.ru/?add-to-cart=5101" style="margin-bottom:20px;">
+                        Купить полный курс за&nbsp;7500&nbsp;₽
+                    </a>
+                </div>
+                <div class="hidden-xs hidden-sm hidden-md col-lg-6">
+                    <img src="./Websarafan _ Второй день контент-саммита 2016 - Websarafan_files/footer__1.jpg">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    Websarafan&nbsp;— клуб предпринимателей
+                </div>
+                <div class="col-xs-12 likely" style="margin-top: 10px;">
+  <div class="facebook">Поделиться</div>
+  <div class="vkontakte">Поделиться</div>
+   <div class="twitter">Твитнуть</div>
+   <div class="gplus">Плюсануть</div>
+   <div class="telegram">Отправить</div>
+  </div>
+                
+
+                
+            </div>
+        </div>
+</body></html>
