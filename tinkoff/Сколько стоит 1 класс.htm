@@ -74,7 +74,7 @@ if (!('serviceWorker' in navigator))
 
 
 
-    <div class="sharer__item sharer__item--twt js-share-button" data-share="twt" data-url="http://j.tinkoff.ru/" data-text="Сколько стоит ребенок в первый год">
+    <div class="sharer__item sharer__item--twt js-share-button" data-share="twt" data-url="http://j.tinkoff.ru/" data-text="Сколько стоит стоит собрать ребенка в первый класс">
         <span class="sharer__icon sharer__icon--twt"></span>
     </div>
 
@@ -113,135 +113,10 @@ if (!('serviceWorker' in navigator))
 <h3>Школьная форма</h3>
 <div class="calc js-calc">
 
-	<!--<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_1">
-		<label for="b_cost_toggle_1" class="calc__item-label">Государственная поликлиника</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="0" type="number" disabled="" data-default="0">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item calc__item--combo unchecked js-calc-item" data-combo="pregnancy_contract">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_2">
-		<label for="b_cost_toggle_2" class="calc__item-label">Прием гинеколога</label>
-		<div class="calc__item-hint js-calc-item-hint">
-			Включено в&nbsp;контракт на&nbsp;ведение беременности
-		</div>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="1200" type="number" data-default="1200">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke" data-month="">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">раз за&nbsp;беременность</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item calc__item--combo unchecked js-calc-item" data-combo="pregnancy_contract">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_3">
-		<label for="b_cost_toggle_3" class="calc__item-label smallcaps">УЗИ</label>
-		<div class="calc__item-hint js-calc-item-hint">
-			Включено в&nbsp;контракт на&nbsp;ведение беременности
-		</div>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="1500" type="number" data-default="1500">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke" data-month="">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">раз за&nbsp;беременность</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item calc__item--combo unchecked js-calc-item" data-combo="pregnancy_contract">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_4">
-		<label for="b_cost_toggle_4" class="calc__item-label smallcaps">3Д УЗИ</label>
-		<div class="calc__item-hint js-calc-item-hint">
-			Включено в&nbsp;контракт на&nbsp;ведение беременности
-		</div>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="2500" type="number" data-default="2500">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke" data-month="">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">раз за&nbsp;беременность</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item unchecked js-calc-item" data-combo-master="true" id="pregnancy_contract">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_5">
-		<label for="b_cost_toggle_5" class="calc__item-label">Контракт на&nbsp;ведение беременности</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="90000" type="number" data-default="90000">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_6">
-		<label for="b_cost_toggle_6" class="calc__item-label">Витамины</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="350" type="number" data-default="350">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">шт.</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke" data-month="">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="months" value="9" max="12" data-default="9">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">мес.</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_7">
-		<label for="b_cost_toggle_7" class="calc__item-label">Одежда для беременных</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="10000" type="number" data-default="10000">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>-->
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_1">
-		<label for="b_cost_toggle_1" class="calc__item-label">Пиджак или кардиган</label>
+		<label for="b_cost_toggle_1" class="calc__item-label">Пиджак или&nbsp;кардиган</label>
 		<span class="calc__item-price js-calc-item-price">
 			<input class="input input--wide js-calc-field" data-field="price" value="2000" type="number" data-default="2000">&nbsp;<span class="ruble">Р</span>
 		</span>
@@ -260,14 +135,14 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_2">
-		<label for="b_cost_toggle_2" class="calc__item-label">Рубашка или блузка</label>
+		<label for="b_cost_toggle_2" class="calc__item-label">Рубашка или&nbsp;блузка</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="800" type="number" data-default="800">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="700" type="number" data-default="700">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
 				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="2" data-default="2">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
 			<span class="calc__item-units">шт.</span>
@@ -281,7 +156,7 @@ if (!('serviceWorker' in navigator))
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_3">
 		<label for="b_cost_toggle_3" class="calc__item-label">Галстук</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="800" type="number" data-default="800">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="500" type="number" data-default="500">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -300,12 +175,12 @@ if (!('serviceWorker' in navigator))
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_4">
 		<label for="b_cost_toggle_4" class="calc__item-label">Брюки</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="800" type="number" data-default="800">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="700" type="number" data-default="700">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
 				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="2" data-default="2">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
 			<span class="calc__item-units">шт.</span>
@@ -319,12 +194,12 @@ if (!('serviceWorker' in navigator))
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_5">
 		<label for="b_cost_toggle_5" class="calc__item-label">Юбка</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="2000" type="number" data-default="2000">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="400" type="number" data-default="400">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
 				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="2" data-default="2">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
 			<span class="calc__item-units">шт.</span>
@@ -338,7 +213,7 @@ if (!('serviceWorker' in navigator))
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_6">
 		<label for="b_cost_toggle_6" class="calc__item-label">Сарафан</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="2000" type="number" data-default="2000">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="850" type="number" data-default="850">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -355,9 +230,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_7">
-		<label for="b_cost_toggle_7" class="calc__item-label">Жилет или пуловер</label>
+		<label for="b_cost_toggle_7" class="calc__item-label">Жилет или&nbsp;пуловер</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="2000" type="number" data-default="2000">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="800" type="number" data-default="800">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -392,10 +267,10 @@ if (!('serviceWorker' in navigator))
 	</div>
 
 	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_7">
-		<label for="b_cost_toggle_7" class="calc__item-label">Мешок для&nbsp;сменки</label>
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_9">
+		<label for="b_cost_toggle_9" class="calc__item-label">Мешок для&nbsp;сменки</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="2000" type="number" data-default="2000">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -410,16 +285,6 @@ if (!('serviceWorker' in navigator))
 		</span>
 	</div>
 
-	<!--<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_9">
-		<label for="b_cost_toggle_9" class="calc__item-label">Курсы подготовки к&nbsp;родам</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="9000" type="number" data-default="9000">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>-->
 
 	<div class="calc__footer js-calc-footer">
 		<div class="calc__subtotal js-calc-subtotal">Всего на&nbsp;школьную форму: <b>0</b>&nbsp;<span class="ruble">Р</span></div>
@@ -431,53 +296,15 @@ if (!('serviceWorker' in navigator))
 <div class="calc js-calc">
 
 	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_8">
-		<label for="b_cost_toggle_8" class="calc__item-label">Футболка</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="2000" type="number" data-default="2000">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">шт.</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_9">
-		<label for="b_cost_toggle_9" class="calc__item-label">Шорты</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="2000" type="number" data-default="2000">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">шт.</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_10">
-		<label for="b_cost_toggle_10" class="calc__item-label">Спортивный костюм</label>
+		<label for="b_cost_toggle_10" class="calc__item-label">Футболка</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="2000" type="number" data-default="2000">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="150" type="number" data-default="150">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
 				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="2" data-default="2">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
 			<span class="calc__item-units">шт.</span>
@@ -489,9 +316,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_11">
-		<label for="b_cost_toggle_11" class="calc__item-label">Кроссовки</label>
+		<label for="b_cost_toggle_11" class="calc__item-label">Шорты</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="2000" type="number" data-default="2000">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="300" type="number" data-default="300">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -508,9 +335,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_12">
-		<label for="b_cost_toggle_12" class="calc__item-label">Юбка для&nbsp;ритмики</label>
+		<label for="b_cost_toggle_12" class="calc__item-label">Спортивный костюм</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="2000" type="number" data-default="2000">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="800" type="number" data-default="800">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -527,9 +354,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_13">
-		<label for="b_cost_toggle_13" class="calc__item-label">Чешки или балетки</label>
+		<label for="b_cost_toggle_13" class="calc__item-label">Кроссовки</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="2000" type="number" data-default="2000">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="1500" type="number" data-default="1500">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -546,7 +373,45 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_14">
-		<label for="b_cost_toggle_14" class="calc__item-label">Лыжи, палки, ботинки</label>
+		<label for="b_cost_toggle_14" class="calc__item-label">Юбка для&nbsp;ритмики</label>
+		<span class="calc__item-price js-calc-item-price">
+			<input class="input input--wide js-calc-field" data-field="price" value="400" type="number" data-default="400">&nbsp;<span class="ruble">Р</span>
+		</span>
+		<span class="calc__item-yoke js-calc-item-yoke">
+			<span class="yoke">
+				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
+			</span>
+			<span class="calc__item-units">шт.</span>
+		</span>
+		<span class="calc__item-subtotal js-calc-item-subtotal">
+			<b>0</b>&nbsp;<span class="ruble">Р</span>
+		</span>
+	</div>
+
+	<div class="calc__item unchecked js-calc-item">
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_15">
+		<label for="b_cost_toggle_15" class="calc__item-label">Чешки или&nbsp;балетки</label>
+		<span class="calc__item-price js-calc-item-price">
+			<input class="input input--wide js-calc-field" data-field="price" value="350" type="number" data-default="350">&nbsp;<span class="ruble">Р</span>
+		</span>
+		<span class="calc__item-yoke js-calc-item-yoke">
+			<span class="yoke">
+				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
+			</span>
+			<span class="calc__item-units">шт.</span>
+		</span>
+		<span class="calc__item-subtotal js-calc-item-subtotal">
+			<b>0</b>&nbsp;<span class="ruble">Р</span>
+		</span>
+	</div>
+
+	<div class="calc__item unchecked js-calc-item">
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_16">
+		<label for="b_cost_toggle_16" class="calc__item-label">Лыжи, палки, ботинки</label>
 		<span class="calc__item-price js-calc-item-price">
 			<input class="input input--wide js-calc-field" data-field="price" value="2000" type="number" data-default="2000">&nbsp;<span class="ruble">Р</span>
 		</span>
@@ -563,49 +428,6 @@ if (!('serviceWorker' in navigator))
 		</span>
 	</div>
 
-	<!--<div class="calc__item calc__item--radio unchecked js-calc-item">
-		<input type="radio" name="contract" class="radio calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_10">
-		<label for="b_cost_toggle_10" class="calc__item-label">Роды по&nbsp;родовому сертификату</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="0" type="number" disabled="" data-default="0">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item calc__item--radio unchecked js-calc-item">
-		<input type="radio" name="contract" class="radio calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_11">
-		<label for="b_cost_toggle_11" class="calc__item-label">Контракт с&nbsp;дежурной бригадой</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="70000" type="number" data-default="70000">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item calc__item--radio unchecked js-calc-item">
-		<input type="radio" name="contract" class="radio calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_12">
-		<label for="b_cost_toggle_12" class="calc__item-label">Контракт «всё включено»</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="90000" type="number" data-default="90000">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_13">
-		<label for="b_cost_toggle_13" class="calc__item-label">Вещи в&nbsp;роддом</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="2000" type="number" data-default="2000">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>-->
 
 	<div class="calc__footer js-calc-footer">
 		<div class="calc__subtotal js-calc-subtotal">Всего на&nbsp;физкультуру и ритмику: <b>0</b>&nbsp;<span class="ruble">Р</span></div>
@@ -617,48 +439,10 @@ if (!('serviceWorker' in navigator))
 <div class="calc js-calc">
 
 	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_15">
-		<label for="b_cost_toggle_15" class="calc__item-label">Ранец</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="12000" type="number" data-default="12000">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_16">
-		<label for="b_cost_toggle_16" class="calc__item-label">Пенал</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">шт.</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_17">
-		<label for="b_cost_toggle_17" class="calc__item-label">Ручки: синяя, зеленая, красная</label>
+		<label for="b_cost_toggle_17" class="calc__item-label">Ранец</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">шт.</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="3000" type="number" data-default="3000">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -667,9 +451,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_18">
-		<label for="b_cost_toggle_18" class="calc__item-label">Простой карандаш</label>
+		<label for="b_cost_toggle_18" class="calc__item-label">Пенал</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="150" type="number" data-default="150">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -686,14 +470,14 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_19">
-		<label for="b_cost_toggle_19" class="calc__item-label">Ластик</label>
+		<label for="b_cost_toggle_19" class="calc__item-label">Ручка: синяя, зеленая, красная</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="20" type="number" data-default="20">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
 				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="5" data-default="5">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
 			<span class="calc__item-units">шт.</span>
@@ -705,14 +489,14 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_20">
-		<label for="b_cost_toggle_20" class="calc__item-label">Линейка</label>
+		<label for="b_cost_toggle_20" class="calc__item-label">Простой карандаш</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="20" type="number" data-default="20">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
 				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="2" data-default="2">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
 			<span class="calc__item-units">шт.</span>
@@ -724,9 +508,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_21">
-		<label for="b_cost_toggle_21" class="calc__item-label">Цветные карандаши</label>
+		<label for="b_cost_toggle_21" class="calc__item-label">Ластик</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="8" type="number" data-default="8">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -743,17 +527,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_22">
-		<label for="b_cost_toggle_22" class="calc__item-label">Фломастеры</label>
+		<label for="b_cost_toggle_22" class="calc__item-label">Точилка</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">шт.</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="15" type="number" data-default="15">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -762,17 +538,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_23">
-		<label for="b_cost_toggle_23" class="calc__item-label">Акварель</label>
+		<label for="b_cost_toggle_23" class="calc__item-label">Линейка</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">шт.</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="12" type="number" data-default="12">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -781,9 +549,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_24">
-		<label for="b_cost_toggle_24" class="calc__item-label">Гуашь</label>
+		<label for="b_cost_toggle_24" class="calc__item-label">Цветные карандаши</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="50" type="number" data-default="50">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -800,9 +568,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_25">
-		<label for="b_cost_toggle_25" class="calc__item-label">Кисточки</label>
+		<label for="b_cost_toggle_25" class="calc__item-label">Фломастеры</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="50" type="number" data-default="50">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -810,7 +578,7 @@ if (!('serviceWorker' in navigator))
 				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
-			<span class="calc__item-units">шт.</span>
+			<span class="calc__item-units">уп.</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -819,9 +587,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_26">
-		<label for="b_cost_toggle_26" class="calc__item-label">Восковые мелки</label>
+		<label for="b_cost_toggle_26" class="calc__item-label">Акварель</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="45" type="number" data-default="45">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -829,7 +597,7 @@ if (!('serviceWorker' in navigator))
 				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
-			<span class="calc__item-units">шт.</span>
+			<span class="calc__item-units">уп.</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -838,17 +606,17 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_27">
-		<label for="b_cost_toggle_27" class="calc__item-label">Акварельная бумага</label>
+		<label for="b_cost_toggle_27" class="calc__item-label">Гуашь</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="90" type="number" data-default="90">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
 				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="2" data-default="2">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
-			<span class="calc__item-units">шт.</span>
+			<span class="calc__item-units">уп.</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -857,14 +625,14 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_28">
-		<label for="b_cost_toggle_28" class="calc__item-label">Альбом для&nbsp;рисования</label>
+		<label for="b_cost_toggle_28" class="calc__item-label">Кисточки</label>
 		<span class="calc__item-price js-calc-item-price">
 			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
 				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="3" data-default="3">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
 			<span class="calc__item-units">шт.</span>
@@ -876,17 +644,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_29">
-		<label for="b_cost_toggle_29" class="calc__item-label">Пластилин</label>
+		<label for="b_cost_toggle_29" class="calc__item-label">Стакан-непроливайка</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">шт.</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="15" type="number" data-default="15">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -895,9 +655,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_30">
-		<label for="b_cost_toggle_30" class="calc__item-label">Белый картон</label>
+		<label for="b_cost_toggle_30" class="calc__item-label">Восковые мелки</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="30" type="number" data-default="30">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -905,7 +665,7 @@ if (!('serviceWorker' in navigator))
 				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
-			<span class="calc__item-units">шт.</span>
+			<span class="calc__item-units">уп.</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -914,9 +674,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_31">
-		<label for="b_cost_toggle_31" class="calc__item-label">Цветной картон</label>
+		<label for="b_cost_toggle_31" class="calc__item-label">Акварельная бумага</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="110" type="number" data-default="110">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -924,7 +684,7 @@ if (!('serviceWorker' in navigator))
 				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
-			<span class="calc__item-units">шт.</span>
+			<span class="calc__item-units">уп.</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -933,9 +693,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_32">
-		<label for="b_cost_toggle_32" class="calc__item-label">Цветная бумага</label>
+		<label for="b_cost_toggle_32" class="calc__item-label">Альбом для&nbsp;рисования</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="60" type="number" data-default="60">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -952,17 +712,17 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_33">
-		<label for="b_cost_toggle_33" class="calc__item-label">Ножницы</label>
+		<label for="b_cost_toggle_33" class="calc__item-label">Пластилин</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="45" type="number" data-default="45">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
 				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="3" data-default="3">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
-			<span class="calc__item-units">шт.</span>
+			<span class="calc__item-units">уп.</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -971,9 +731,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_34">
-		<label for="b_cost_toggle_34" class="calc__item-label">Клей-карандаш</label>
+		<label for="b_cost_toggle_34" class="calc__item-label">Белый картон</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="30" type="number" data-default="30">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -981,7 +741,7 @@ if (!('serviceWorker' in navigator))
 				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
-			<span class="calc__item-units">шт.</span>
+			<span class="calc__item-units">уп.</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -990,9 +750,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_35">
-		<label for="b_cost_toggle_35" class="calc__item-label">Клей <span class="smallcaps">ПВА</span></label>
+		<label for="b_cost_toggle_35" class="calc__item-label">Цветной картон</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="30" type="number" data-default="30">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -1000,7 +760,7 @@ if (!('serviceWorker' in navigator))
 				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
-			<span class="calc__item-units">шт.</span>
+			<span class="calc__item-units">уп.</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -1009,17 +769,17 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_36">
-		<label for="b_cost_toggle_36" class="calc__item-label">Папка для&nbsp;<span class="smallcaps">изо</span></label>
+		<label for="b_cost_toggle_36" class="calc__item-label">Цветная бумага</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="17" type="number" data-default="17">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
 				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="3" data-default="3">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
-			<span class="calc__item-units">шт.</span>
+			<span class="calc__item-units">уп.</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -1028,9 +788,9 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_37">
-		<label for="b_cost_toggle_37" class="calc__item-label">Счетный материал</label>
+		<label for="b_cost_toggle_37" class="calc__item-label">Ножницы</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="40" type="number" data-default="40">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -1047,9 +807,46 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_38">
-		<label for="b_cost_toggle_38" class="calc__item-label">Подставка для&nbsp;учебников</label>
+		<label for="b_cost_toggle_38" class="calc__item-label">Клей-карандаш</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="50" type="number" data-default="50">&nbsp;<span class="ruble">Р</span>
+		</span>
+		<span class="calc__item-yoke js-calc-item-yoke">
+			<span class="yoke">
+				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="2" data-default="2">
+				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
+			</span>
+			<span class="calc__item-units">шт.</span>
+		</span>
+		<span class="calc__item-subtotal js-calc-item-subtotal">
+			<b>0</b>&nbsp;<span class="ruble">Р</span>
+		</span>
+	</div>
+
+	<div class="calc__item unchecked js-calc-item">
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_39">
+		<label for="b_cost_toggle_39" class="calc__item-label">Клей <span class="smallcaps">ПВА</span></label>
+		<span class="calc__item-price js-calc-item-price">
+			<input class="input input--wide js-calc-field" data-field="price" value="16" type="number" data-default="16">&nbsp;<span class="ruble">Р</span>
+		</span>
+		<span class="calc__item-yoke js-calc-item-yoke">
+			<span class="yoke">
+				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
+			</span>
+			<span class="calc__item-units">шт.</span>
+		</span>
+		<span class="calc__item-subtotal js-calc-item-subtotal">
+			<b>0</b>&nbsp;<span class="ruble">Р</span>
+		</span>
+	</div>
+	<div class="calc__item unchecked js-calc-item">
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_40">
+		<label for="b_cost_toggle_40" class="calc__item-label">Папка для&nbsp;<span class="smallcaps">изо</span></label>
+		<span class="calc__item-price js-calc-item-price">
+			<input class="input input--wide js-calc-field" data-field="price" value="200" type="number" data-default="200">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
@@ -1065,10 +862,22 @@ if (!('serviceWorker' in navigator))
 	</div>
 
 	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_39">
-		<label for="b_cost_toggle_39" class="calc__item-label">Папка для&nbsp;портфолио</label>
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_41">
+		<label for="b_cost_toggle_41" class="calc__item-label">Подставка для&nbsp;учебников</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="3500" type="number" data-default="3500">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="60" type="number" data-default="60">&nbsp;<span class="ruble">Р</span>
+		</span>
+		<span class="calc__item-subtotal js-calc-item-subtotal">
+			<b>0</b>&nbsp;<span class="ruble">Р</span>
+		</span>
+	</div>
+
+
+	<div class="calc__item unchecked js-calc-item">
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_42">
+		<label for="b_cost_toggle_42" class="calc__item-label">Папка для&nbsp;портфолио</label>
+		<span class="calc__item-price js-calc-item-price">
+			<input class="input input--wide js-calc-field" data-field="price" value="150" type="number" data-default="150">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -1076,15 +885,15 @@ if (!('serviceWorker' in navigator))
 	</div>
 
 	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_40">
-		<label for="b_cost_toggle_40" class="calc__item-label">Чехол для&nbsp;карты школьника</label>
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_43">
+		<label for="b_cost_toggle_43" class="calc__item-label">Чехол для&nbsp;карты школьника</label>
 		<span class="calc__item-price js-calc-item-price">
 			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
 				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="2" data-default="2">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
 			<span class="calc__item-units">шт.</span>
@@ -1104,67 +913,10 @@ if (!('serviceWorker' in navigator))
 <div class="calc js-calc">
 
 	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_41">
-		<label for="b_cost_toggle_41" class="calc__item-label">Комплект рабочих тетрадей по&nbsp;предметам</label>
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_44">
+		<label for="b_cost_toggle_44" class="calc__item-label">Комплект рабочих тетрадей по&nbsp;предметам</label>
 		<span class="calc__item-price js-calc-item-price">
 			<input class="input input--wide js-calc-field" data-field="price" value="3500" type="number" data-default="3500">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_42">
-		<label for="b_cost_toggle_42" class="calc__item-label">Тетрадь в&nbsp;узкую линейку</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">шт.</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_43">
-		<label for="b_cost_toggle_43" class="calc__item-label">Тетрадь в клетку</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">шт.</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_44">
-		<label for="b_cost_toggle_44" class="calc__item-label">Обложки для&nbsp;тетрадей и&nbsp;учебников</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-yoke js-calc-item-yoke">
-			<span class="yoke">
-				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
-				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
-			</span>
-			<span class="calc__item-units">шт.</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -1173,14 +925,81 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_45">
-		<label for="b_cost_toggle_45" class="calc__item-label">Словарь для&nbsp;записи слов</label>
+		<label for="b_cost_toggle_45" class="calc__item-label">Тетрадь в&nbsp;узкую линейку</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="3500" type="number" data-default="3500">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="10" type="number" data-default="10">&nbsp;<span class="ruble">Р</span>
+		</span>
+		<span class="calc__item-yoke js-calc-item-yoke">
+			<span class="yoke">
+				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="3" data-default="3">
+				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
+			</span>
+			<span class="calc__item-units">шт.</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
 		</span>
 	</div>
+
+	<div class="calc__item unchecked js-calc-item">
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_46">
+		<label for="b_cost_toggle_46" class="calc__item-label">Тетрадь в&nbsp;клетку</label>
+		<span class="calc__item-price js-calc-item-price">
+			<input class="input input--wide js-calc-field" data-field="price" value="10" type="number" data-default="10">&nbsp;<span class="ruble">Р</span>
+		</span>
+		<span class="calc__item-yoke js-calc-item-yoke">
+			<span class="yoke">
+				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="3" data-default="3">
+				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
+			</span>
+			<span class="calc__item-units">шт.</span>
+		</span>
+		<span class="calc__item-subtotal js-calc-item-subtotal">
+			<b>0</b>&nbsp;<span class="ruble">Р</span>
+		</span>
+	</div>
+
+	<div class="calc__item unchecked js-calc-item">
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_47">
+		<label for="b_cost_toggle_47" class="calc__item-label">Обложки для&nbsp;тетрадей и&nbsp;учебников</label>
+		<span class="calc__item-price js-calc-item-price">
+			<input class="input input--wide js-calc-field" data-field="price" value="10" type="number" data-default="10">&nbsp;<span class="ruble">Р</span>
+		</span>
+		<span class="calc__item-yoke js-calc-item-yoke">
+			<span class="yoke">
+				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="15" data-default="15">
+				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
+			</span>
+			<span class="calc__item-units">шт.</span>
+		</span>
+		<span class="calc__item-subtotal js-calc-item-subtotal">
+			<b>0</b>&nbsp;<span class="ruble">Р</span>
+		</span>
+	</div>
+
+	<div class="calc__item unchecked js-calc-item">
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_48">
+		<label for="b_cost_toggle_48" class="calc__item-label">Словарь для&nbsp;записи слов</label>
+		<span class="calc__item-price js-calc-item-price">
+			<input class="input input--wide js-calc-field" data-field="price" value="30" type="number" data-default="30">&nbsp;<span class="ruble">Р</span>
+		</span>
+		<span class="calc__item-yoke js-calc-item-yoke">
+			<span class="yoke">
+				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
+			</span>
+			<span class="calc__item-units">шт.</span>
+		</span>
+		<span class="calc__item-subtotal js-calc-item-subtotal">
+			<b>0</b>&nbsp;<span class="ruble">Р</span>
+		</span>
+	</div>
+
+
 
 
 	<div class="calc__footer js-calc-footer">
@@ -1193,43 +1012,43 @@ if (!('serviceWorker' in navigator))
 <div class="calc js-calc">
 
 	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_46">
-		<label for="b_cost_toggle_46" class="calc__item-label">Письменнный стол или&nbsp;парта</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="3500" type="number" data-default="3500">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_47">
-		<label for="b_cost_toggle_47" class="calc__item-label">Стул или&nbsp;кресло</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="3500" type="number" data-default="3500">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_48">
-		<label for="b_cost_toggle_48" class="calc__item-label">Настольная лампа</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="3500" type="number" data-default="3500">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_49">
-		<label for="b_cost_toggle_49" class="calc__item-label">Подставка для&nbsp;ручек</label>
+		<label for="b_cost_toggle_49" class="calc__item-label">Письменнный стол или&nbsp;парта</label>
+		<span class="calc__item-price js-calc-item-price">
+			<input class="input input--wide js-calc-field" data-field="price" value="5000" type="number" data-default="5000">&nbsp;<span class="ruble">Р</span>
+		</span>
+		<span class="calc__item-subtotal js-calc-item-subtotal">
+			<b>0</b>&nbsp;<span class="ruble">Р</span>
+		</span>
+	</div>
+
+	<div class="calc__item unchecked js-calc-item">
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_50">
+		<label for="b_cost_toggle_50" class="calc__item-label">Стул или&nbsp;кресло</label>
 		<span class="calc__item-price js-calc-item-price">
 			<input class="input input--wide js-calc-field" data-field="price" value="3500" type="number" data-default="3500">&nbsp;<span class="ruble">Р</span>
+		</span>
+		<span class="calc__item-subtotal js-calc-item-subtotal">
+			<b>0</b>&nbsp;<span class="ruble">Р</span>
+		</span>
+	</div>
+
+	<div class="calc__item unchecked js-calc-item">
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_51">
+		<label for="b_cost_toggle_51" class="calc__item-label">Настольная лампа</label>
+		<span class="calc__item-price js-calc-item-price">
+			<input class="input input--wide js-calc-field" data-field="price" value="3000" type="number" data-default="3000">&nbsp;<span class="ruble">Р</span>
+		</span>
+		<span class="calc__item-subtotal js-calc-item-subtotal">
+			<b>0</b>&nbsp;<span class="ruble">Р</span>
+		</span>
+	</div>
+
+	<div class="calc__item unchecked js-calc-item">
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_52">
+		<label for="b_cost_toggle_52" class="calc__item-label">Подставка для&nbsp;ручек</label>
+		<span class="calc__item-price js-calc-item-price">
+			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -1245,10 +1064,10 @@ if (!('serviceWorker' in navigator))
 <div class="calc js-calc">
 
 	<div class="calc__item calc__item--radio unchecked js-calc-item">
-		<input type="radio" name="clinic" class="radio calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_50">
-		<label for="b_cost_toggle_50" class="calc__item-label">Телефон</label>
+		<input type="radio" name="clinic" class="radio calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_53">
+		<label for="b_cost_toggle_53" class="calc__item-label">Телефон</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="0" type="number" data-default="0">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="3000" type="number" data-default="3000">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -1256,10 +1075,10 @@ if (!('serviceWorker' in navigator))
 	</div>
 
 	<div class="calc__item calc__item--radio unchecked js-calc-item">
-		<input type="radio" name="clinic" class="radio calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_51">
-		<label for="b_cost_toggle_51" class="calc__item-label">Умные часы</label>
+		<input type="radio" name="clinic" class="radio calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_54">
+		<label for="b_cost_toggle_54" class="calc__item-label">Умные часы</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="50000" type="number" data-default="50000">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="5000" type="number" data-default="5000">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -1267,15 +1086,15 @@ if (!('serviceWorker' in navigator))
 	</div>
 
 	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_52">
-		<label for="b_cost_toggle_52" class="calc__item-label">Абонентская плата</label>
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_55">
+		<label for="b_cost_toggle_55" class="calc__item-label">Плата за&nbsp;связь</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="200" type="number" data-default="200">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
 				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="9" data-default="9">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
 			<span class="calc__item-units">мес.</span>
@@ -1291,67 +1110,14 @@ if (!('serviceWorker' in navigator))
 	</div>
 </div>
 
-<h3>Медкарта</h3>
-<div class="calc js-calc">
-
-	<div class="calc__item calc__item--radio unchecked js-calc-item">
-		<input type="radio" name="clinic" class="radio calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_53">
-		<label for="b_cost_toggle_53" class="calc__item-label">Государственная поликлиника</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="0" type="number" data-default="0">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__item calc__item--radio unchecked js-calc-item">
-		<input type="radio" name="clinic" class="radio calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_54">
-		<label for="b_cost_toggle_54" class="calc__item-label">Частная клиника</span></label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="50000" type="number" data-default="50000">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-
-
-	<div class="calc__footer js-calc-footer">
-		<div class="calc__subtotal js-calc-subtotal">Всего на&nbsp;медкарту: <b>0</b>&nbsp;<span class="ruble">Р</span></div>
-		<div class="calc__total js-calc-total">Все вместе: <b>0</b>&nbsp;<span class="ruble">Р</span></div>
-	</div>
-</div>
-
-<h3>1 сентября</h3>
-<div class="calc js-calc">
-
-	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_55">
-		<label for="b_cost_toggle_55" class="calc__item-label">Цветы учителю</label>
-		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="3500" type="number" data-default="3500">&nbsp;<span class="ruble">Р</span>
-		</span>
-		<span class="calc__item-subtotal js-calc-item-subtotal">
-			<b>0</b>&nbsp;<span class="ruble">Р</span>
-		</span>
-	</div>
-
-	<div class="calc__footer js-calc-footer">
-		<div class="calc__subtotal js-calc-subtotal">Всего на&nbsp;1 сентября: <b>0</b>&nbsp;<span class="ruble">Р</span></div>
-		<div class="calc__total js-calc-total">Все вместе: <b>0</b>&nbsp;<span class="ruble">Р</span></div>
-	</div>
-</div>
-
 <h3 class="summary__title">Другое</h3>
 <div class="calc js-calc">
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_56">
-		<label for="b_cost_toggle_56" class="calc__item-label">Нужды класса, праздники, дни рождения</label>
+		<label for="b_cost_toggle_56" class="calc__item-label">Цветы учителю</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="3500" type="number" data-default="3500">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="1500" type="number" data-default="1500">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-subtotal js-calc-item-subtotal">
 			<b>0</b>&nbsp;<span class="ruble">Р</span>
@@ -1360,14 +1126,25 @@ if (!('serviceWorker' in navigator))
 
 	<div class="calc__item unchecked js-calc-item">
 		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_57">
-		<label for="b_cost_toggle_57" class="calc__item-label">Обеды</label>
+		<label for="b_cost_toggle_57" class="calc__item-label">Нужды класса, праздники, дни рождения</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="5000" type="number" data-default="5000">&nbsp;<span class="ruble">Р</span>
+		</span>
+		<span class="calc__item-subtotal js-calc-item-subtotal">
+			<b>0</b>&nbsp;<span class="ruble">Р</span>
+		</span>
+	</div>
+
+	<div class="calc__item unchecked js-calc-item">
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_58">
+		<label for="b_cost_toggle_58" class="calc__item-label">Питание</label>
+		<span class="calc__item-price js-calc-item-price">
+			<input class="input input--wide js-calc-field" data-field="price" value="3500" type="number" data-default="3500">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
 				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="9" data-default="9">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
 			<span class="calc__item-units">мес.</span>
@@ -1378,15 +1155,34 @@ if (!('serviceWorker' in navigator))
 	</div>
 
 	<div class="calc__item unchecked js-calc-item">
-		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_58">
-		<label for="b_cost_toggle_58" class="calc__item-label">Продленка</label>
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_59">
+		<label for="b_cost_toggle_59" class="calc__item-label">Продленка</label>
 		<span class="calc__item-price js-calc-item-price">
-			<input class="input input--wide js-calc-field" data-field="price" value="100" type="number" data-default="100">&nbsp;<span class="ruble">Р</span>
+			<input class="input input--wide js-calc-field" data-field="price" value="2800" type="number" data-default="2800">&nbsp;<span class="ruble">Р</span>
 		</span>
 		<span class="calc__item-yoke js-calc-item-yoke">
 			<span class="yoke">
 				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
-				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="1" data-default="1">
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="9" data-default="9">
+				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
+			</span>
+			<span class="calc__item-units">мес.</span>
+		</span>
+		<span class="calc__item-subtotal js-calc-item-subtotal">
+			<b>0</b>&nbsp;<span class="ruble">Р</span>
+		</span>
+	</div>
+
+	<div class="calc__item unchecked js-calc-item">
+		<input type="checkbox" class="checkbox calc__item-toggle js-calc-item-toggle" id="b_cost_toggle_60">
+		<label for="b_cost_toggle_60" class="calc__item-label">Проездной</label>
+		<span class="calc__item-price js-calc-item-price">
+			<input class="input input--wide js-calc-field" data-field="price" value="250" type="number" data-default="250">&nbsp;<span class="ruble">Р</span>
+		</span>
+		<span class="calc__item-yoke js-calc-item-yoke">
+			<span class="yoke">
+				<button class="yoke-handle" data-sign="minus" tabindex="-1">−</button>
+				<input type="number" class="input yoke-input js-calc-field" data-field="multiplier" value="9" data-default="9">
 				<button class="yoke-handle" data-sign="plus" tabindex="-1">+</button>
 			</span>
 			<span class="calc__item-units">мес.</span>
@@ -1397,50 +1193,12 @@ if (!('serviceWorker' in navigator))
 	</div>
 
 
-
 	<div class="calc__footer js-calc-footer">
 		<div class="calc__subtotal js-calc-subtotal">Всего на&nbsp;другое: <b>0</b>&nbsp;<span class="ruble">Р</span></div>
 		<div class="calc__total js-calc-total">Все вместе: <b>0</b>&nbsp;<span class="ruble">Р</span></div>
 	</div>
 </div>
 
-<div class="calc-chart"><div class="calc-chart__group js-calc-chart-group" style="width: 11.111%; left: 0%;">
-				<span class="calc-chart__group-title">Школьная форма</span>
-				<span class="calc-chart__group-total js-calc-chart-value"><span>0</span> <span class="ruble">Р</span></span>
-				<div class="calc-chart__group-bar js-calc-chart-bar"></div>
-			</div><div class="calc-chart__group js-calc-chart-group" style="width: 11.111%; left: 11.111%;">
-				<span class="calc-chart__group-title">Физкультура и ритмика</span>
-				<span class="calc-chart__group-total js-calc-chart-value"><span>0</span> <span class="ruble">Р</span></span>
-				<div class="calc-chart__group-bar js-calc-chart-bar"></div>
-			</div><div class="calc-chart__group js-calc-chart-group" style="width: 11.111%; left: 22.222%;">
-				<span class="calc-chart__group-title">Канцелярия</span>
-				<span class="calc-chart__group-total js-calc-chart-value"><span>0</span> <span class="ruble">Р</span></span>
-				<div class="calc-chart__group-bar js-calc-chart-bar"></div>
-			</div><div class="calc-chart__group js-calc-chart-group" style="width: 11.111%; left: 33.333%;">
-				<span class="calc-chart__group-title">Учебные материалы</span>
-				<span class="calc-chart__group-total js-calc-chart-value"><span>0</span> <span class="ruble">Р</span></span>
-				<div class="calc-chart__group-bar js-calc-chart-bar"></div>
-			</div><div class="calc-chart__group js-calc-chart-group" style="width: 11.111%; left: 44.444%;">
-				<span class="calc-chart__group-title">Детская комната</span>
-				<span class="calc-chart__group-total js-calc-chart-value"><span>0</span> <span class="ruble">Р</span></span>
-				<div class="calc-chart__group-bar js-calc-chart-bar"></div>
-			</div><div class="calc-chart__group js-calc-chart-group" style="width: 11.111%; left: 55.555%;">
-				<span class="calc-chart__group-title">Связь</span>
-				<span class="calc-chart__group-total js-calc-chart-value"><span>0</span> <span class="ruble">Р</span></span>
-				<div class="calc-chart__group-bar js-calc-chart-bar"></div>
-			</div><div class="calc-chart__group js-calc-chart-group" style="width: 11.111%; left: 66.666%;">
-				<span class="calc-chart__group-title">Медкарта</span>
-				<span class="calc-chart__group-total js-calc-chart-value"><span>0</span> <span class="ruble">Р</span></span>
-				<div class="calc-chart__group-bar js-calc-chart-bar"></div>
-			</div><div class="calc-chart__group js-calc-chart-group" style="width: 11.111%; left: 77.777%;">
-				<span class="calc-chart__group-title">1 сентября</span>
-				<span class="calc-chart__group-total js-calc-chart-value"><span>0</span> <span class="ruble">Р</span></span>
-				<div class="calc-chart__group-bar js-calc-chart-bar"></div>
-			</div><div class="calc-chart__group js-calc-chart-group" style="width: 11.111%; left: 88.888%;">
-				<span class="calc-chart__group-title">Другое</span>
-				<span class="calc-chart__group-total js-calc-chart-value"><span>0</span> <span class="ruble">Р</span></span>
-				<div class="calc-chart__group-bar js-calc-chart-bar"></div>
-			</div></div>
 		</div>
 
 
@@ -1467,7 +1225,7 @@ if (!('serviceWorker' in navigator))
 
     <div class="sharer__break"></div>
 
-    <div class="sharer__item sharer__item--twt js-share-button" data-share="twt" data-url="http://j.tinkoff.ru/" data-text="Сколько стоит ребенок в первый год">
+    <div class="sharer__item sharer__item--twt js-share-button" data-share="twt" data-url="http://j.tinkoff.ru/" data-text="Сколько стоит собрать ребенка в первый класс">
         <span class="sharer__icon sharer__icon--twt"></span>
     </div>
 
